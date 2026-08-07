@@ -37,7 +37,6 @@ export default function Image() {
         <div
           style={{
             position: 'relative',
-            zIndex: 1,
             textAlign: 'center',
             display: 'flex',
             flexDirection: 'column',
@@ -69,16 +68,18 @@ export default function Image() {
             Premium Designer Lighting
           </div>
 
-          {/* Decorative glyph */}
-          <div
-            style={{
-              fontSize: '32px',
-              color: '#f7d08a',
-              marginTop: '10px',
-            }}
+          {/* Decorative divider (SVG — glyph fonts unavailable in OG rendering) */}
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            style={{ marginTop: '10px' }}
           >
-            ✦
-          </div>
+            <path
+              d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z"
+              fill="#f7d08a"
+            />
+          </svg>
         </div>
       </div>
     ),

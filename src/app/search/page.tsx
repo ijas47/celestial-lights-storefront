@@ -66,16 +66,36 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     );
   }
 
-  // With query: fetch results
+  // With query: fetch results (catch only around the fetch — JSX stays outside)
+  let results: Awaited<ReturnType<typeof searchProducts>> | null = null;
   try {
-    const { products, hasNextPage, endCursor, totalCount } = await searchProducts(q, {
-      first: 24,
-      after,
-    });
+    results = await searchProducts(q, { first: 24, after });
+  } catch (error) {
+    console.error('Search error:', error);
+  }
 
-    // Empty results
-    if (products.length === 0) {
-      return (
+  if (!results) {
+    return (
+      <div className="min-h-[calc(100vh-8rem)]">
+        <section className="py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="font-display text-3xl font-bold text-text-hi mb-4">
+              Search unavailable
+            </h1>
+            <p className="text-text-mid">
+              Please try again later
+            </p>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  const { products, hasNextPage, endCursor, totalCount } = results;
+
+  // Empty results
+  if (products.length === 0) {
+    return (
         <div className="min-h-[calc(100vh-8rem)]">
           <section className="py-24 md:py-32">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
@@ -110,7 +130,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
               <h1 className="font-display text-3xl font-bold text-text-hi mb-2">
-                Results for "{q}"
+                Results for &ldquo;{q}&rdquo;
               </h1>
               <p className="text-text-mid">
                 Found {totalCount} product{totalCount !== 1 ? 's' : ''}
@@ -143,21 +163,4 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         </section>
       </div>
     );
-  } catch (error) {
-    console.error('Search error:', error);
-    return (
-      <div className="min-h-[calc(100vh-8rem)]">
-        <section className="py-24 md:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-display text-3xl font-bold text-text-hi mb-4">
-              Search unavailable
-            </h1>
-            <p className="text-text-mid">
-              Please try again later
-            </p>
-          </div>
-        </section>
-      </div>
-    );
-  }
 }

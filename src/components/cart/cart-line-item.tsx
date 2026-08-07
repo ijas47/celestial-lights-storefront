@@ -90,7 +90,7 @@ export function CartLineItem({ line }: CartLineItemProps) {
             onClick={closeCart}
             className="block text-sm text-text-hi line-clamp-1 hover:text-ember-300 transition-colors focus-visible:ring-1 ring-ember-500 outline-none rounded"
           >
-            {title}
+            {product.title}
           </Link>
 
           {variantDisplay && (

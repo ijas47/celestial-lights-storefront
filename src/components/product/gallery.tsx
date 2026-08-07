@@ -64,7 +64,6 @@ export function Gallery({ images, title }: GalleryProps) {
           sizes="(max-width:1024px) 100vw, 50vw"
           preload={activeIndex === 0}
           className="object-cover animate-fade-in"
-          priority={activeIndex === 0}
         />
       </div>
 

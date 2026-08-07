@@ -89,12 +89,11 @@ export function SearchDialog() {
       clearTimeout(debounceRef.current);
     }
 
-    if (query.trim().length < 2) {
-      setResults([]);
-      return;
-    }
-
     debounceRef.current = setTimeout(() => {
+      if (query.trim().length < 2) {
+        setResults([]);
+        return;
+      }
       startTransition(async () => {
         const data = await predictiveSearchAction(query);
         setResults(data);
@@ -221,7 +220,7 @@ export function SearchDialog() {
                 /* Empty State */
                 <div className="p-8 text-center">
                   <p className="text-text-mid">
-                    No matches for "{query}"
+                    No matches for &ldquo;{query}&rdquo;
                   </p>
                 </div>
               ) : (

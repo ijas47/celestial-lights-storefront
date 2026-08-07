@@ -48,6 +48,7 @@ export async function generateMetadata({
   if (!product) {
     return {
       title: 'Product not found',
+      robots: { index: false },
     };
   }
 
