@@ -1,7 +1,9 @@
 'use client';
 
-import { ReactNode, createContext, useContext, useState } from 'react';
+import { ReactNode, createContext, useContext, useEffect, useState } from 'react';
+import { useTransition } from 'react';
 import type { Cart } from '@/lib/types';
+import { getCartAction } from '@/lib/cart-actions';
 
 export type CartContextValue = {
   cart: Cart | null;
@@ -17,10 +19,18 @@ const CartContext = createContext<CartContextValue | undefined>(undefined);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<Cart | null>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [pending] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
+
+  // Load cart on mount
+  useEffect(() => {
+    startTransition(async () => {
+      const loadedCart = await getCartAction();
+      setCart(loadedCart);
+    });
+  }, []);
 
   return (
     <CartContext.Provider
@@ -30,7 +40,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         openCart,
         closeCart,
         setCart,
-        pending,
+        pending: isPending,
       }}
     >
       {children}
