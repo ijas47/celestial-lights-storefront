@@ -4,6 +4,10 @@ import { CATEGORIES } from '@/lib/categories';
 /**
  * Full category index as a typographic list — no tiles, no glyphs.
  * Reads as a table of contents rather than a set of buttons.
+ *
+ * The row itself is the link, so it carries no "View" label: ten repeated
+ * calls-to-action are noise, and in a two-column grid the right-aligned
+ * label collided with the next column's name.
  */
 export function CategoryTiles() {
   return (
@@ -12,18 +16,15 @@ export function CategoryTiles() {
         All collections
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-24">
         {CATEGORIES.map((category) => (
           <Link
             key={category.slug}
             href={`/collections/${category.slug}`}
-            className="group flex items-baseline justify-between gap-6 border-b border-line py-5"
+            className="group border-b border-line py-5"
           >
-            <span className="caps text-title text-ink transition-opacity group-hover:opacity-55">
+            <span className="caps block text-title text-ink transition-opacity group-hover:opacity-55">
               {category.name}
-            </span>
-            <span className="caps shrink-0 text-label-sm text-ink-low">
-              View
             </span>
           </Link>
         ))}
