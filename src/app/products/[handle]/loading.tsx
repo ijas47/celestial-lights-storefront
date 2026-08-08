@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 
 export default function LoadingProductPage() {
   return (
-    <div className="mx-auto max-w-7xl px-4 md:px-6 py-10">
+    <div className="mx-auto max-w-7xl gutter py-10">
       {/* Main grid */}
       <div className="grid lg:grid-cols-2 gap-10 items-start">
         {/* Left: Gallery skeleton */}
@@ -18,13 +18,13 @@ export default function LoadingProductPage() {
 
         {/* Right: Product info skeleton */}
         <div className="space-y-4">
-          <Skeleton className="h-4 w-24" />
+          <Skeleton className="h-3 w-24" />
           <Skeleton className="h-10 w-3/4" />
           <Skeleton className="h-8 w-40" />
           <div className="flex flex-wrap gap-2 py-4">
-            <Skeleton className="h-10 w-20 rounded-pill" />
-            <Skeleton className="h-10 w-20 rounded-pill" />
-            <Skeleton className="h-10 w-20 rounded-pill" />
+            <Skeleton className="h-9 w-16" />
+            <Skeleton className="h-9 w-16" />
+            <Skeleton className="h-9 w-16" />
           </div>
           <Skeleton className="h-12 w-full" />
           <div className="border-t border-line mt-8 pt-8 space-y-3">

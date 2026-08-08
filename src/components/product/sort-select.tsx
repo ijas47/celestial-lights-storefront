@@ -32,16 +32,16 @@ export function SortSelect({ current }: SortSelectProps) {
   };
 
   return (
-    <div className="flex items-center gap-2">
-      <label htmlFor="sort" className="text-text-low text-sm">
-        Sort:
+    <div className="flex items-center gap-3">
+      <label htmlFor="sort" className="caps text-label-sm text-ink-mid">
+        Sort
       </label>
       <select
         id="sort"
         aria-label="Sort products"
         value={current}
         onChange={(e) => handleChange(e.target.value)}
-        className="bg-night-800 border border-line rounded-pill text-sm text-text-mid px-4 py-2 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ember-500 transition-all cursor-pointer hover:border-line-strong"
+        className="caps-tight text-label cursor-pointer border-0 border-b border-ink bg-transparent px-0 py-1 text-ink transition-colors"
       >
         <option value="featured">Featured</option>
         <option value="price-asc">Price: Low to High</option>

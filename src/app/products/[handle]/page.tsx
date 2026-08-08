@@ -104,42 +104,37 @@ export default async function ProductPage({
         )}
       />
 
-      <div className="mx-auto max-w-7xl px-4 md:px-6 py-10">
-        {/* Main grid */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
-          {/* Left: Gallery */}
+      <div className="mx-auto max-w-7xl gutter section-tight">
+        <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
           <Gallery images={images} title={product.title} />
 
-          {/* Right: Product info */}
-          <div>
-            {/* Eyebrow */}
+          <div className="lg:sticky lg:top-24">
             {product.productType && (
-              <div className="text-ember-300 text-xs tracking-[0.15em] uppercase mb-4">
+              <div className="caps mb-4 text-label-sm text-ink-mid">
                 {product.productType}
               </div>
             )}
 
-            {/* Title */}
-            <h1 className="font-display text-3xl md:text-4xl text-text-hi mb-8">
+            <h1 className="caps mb-8 text-display-lg text-ink">
               {product.title}
             </h1>
 
-            {/* Purchase Panel */}
             <PurchasePanel product={product} />
 
-            {/* Description */}
+            {/* Legacy Shopify description HTML — scoped so imported markup
+                (oversized images, raw tables) cannot break the layout. */}
             {product.descriptionHtml && (
-              <div className="border-t border-line mt-8 pt-8">
+              <div className="mt-10 border-t border-line pt-8">
+                <h2 className="caps mb-5 text-label text-ink">Details</h2>
                 <div
                   dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
-                  className="[&_p]:text-text-mid [&_p]:leading-relaxed [&_p]:my-3 [&_li]:text-text-mid [&_ul]:list-disc [&_ul]:pl-5 [&_a]:text-ember-300 [&_strong]:text-text-hi [&_img]:rounded-card [&_img]:my-4 [&_img]:max-w-full [&_img]:h-auto [&_table]:text-sm [&_table]:text-text-mid [&_h1]:text-lg [&_h2]:text-lg [&_h3]:text-base [&_div]:max-w-full overflow-hidden text-sm"
+                  className="overflow-hidden text-body text-ink-mid [&_a]:text-ink [&_a]:underline [&_a]:underline-offset-2 [&_div]:max-w-full [&_h1]:mt-6 [&_h1]:text-body-lg [&_h1]:text-ink [&_h2]:mt-6 [&_h2]:text-body-lg [&_h2]:text-ink [&_h3]:mt-6 [&_h3]:text-body [&_h3]:text-ink [&_img]:my-5 [&_img]:h-auto [&_img]:w-full [&_img]:max-w-full [&_li]:my-1 [&_li]:text-ink-mid [&_p]:my-3 [&_p]:text-ink-mid [&_strong]:font-semibold [&_strong]:text-ink [&_table]:w-full [&_table]:border-collapse [&_table]:text-body-sm [&_td]:border [&_td]:border-line [&_td]:p-2.5 [&_th]:border [&_th]:border-line [&_th]:p-2.5 [&_th]:text-left [&_ul]:my-3 [&_ul]:list-disc [&_ul]:pl-5"
                 />
               </div>
             )}
           </div>
         </div>
 
-        {/* Recommendations */}
         <ProductRecommendations productId={product.id} />
       </div>
     </>

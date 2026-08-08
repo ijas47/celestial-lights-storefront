@@ -5,15 +5,21 @@ interface BadgeProps {
   children: ReactNode;
 }
 
+/**
+ * Monochrome by design — this system carries no accent colour, so badges
+ * differentiate by border and weight, never by hue (except true danger).
+ */
 export function Badge({ tone = 'neutral', children }: BadgeProps) {
-  const toneClasses = {
-    ember: 'bg-ember-500/20 text-ember-300',
-    neutral: 'bg-night-700 text-text-mid',
-    danger: 'bg-danger/20 text-danger',
+  const tones = {
+    ember: 'border-ink text-ink',
+    neutral: 'border-line-strong text-ink-mid',
+    danger: 'border-danger text-danger',
   };
 
   return (
-    <span className={`inline-block px-2 py-1 rounded-pill text-xs font-medium ${toneClasses[tone]}`}>
+    <span
+      className={`caps inline-block border px-2.5 py-1 text-label-sm ${tones[tone]}`}
+    >
       {children}
     </span>
   );

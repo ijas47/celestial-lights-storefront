@@ -31,7 +31,7 @@ export function VariantPicker({
     <div className="space-y-5">
       {options.map((option) => (
         <div key={option.name}>
-          <label className="text-xs uppercase tracking-wide text-text-low mb-2 block">
+          <label className="caps text-label-sm mb-2 block text-ink-mid">
             {option.name}
           </label>
           <div className="flex flex-wrap gap-2">
@@ -48,10 +48,10 @@ export function VariantPicker({
                   onClick={() =>
                     onSelect(option.name, optionValue.name)
                   }
-                  className={`rounded-pill border px-3.5 py-1.5 text-sm transition-colors focus-visible:ring focus-visible:ring-ember-500 ${
+                  className={`caps-tight text-label border px-4 py-2 active:scale-[0.98] transition-transform duration-[120ms] ${
                     isSelected
-                      ? 'border-ember-400 bg-ember-400/10 text-ember-200'
-                      : 'border-line text-text-mid hover:border-ember-500'
+                      ? 'border-ink bg-ink text-ink-inverse'
+                      : 'border-line text-ink hover:border-ink'
                   } ${!isAvailable ? 'opacity-40 line-through' : ''}`}
                   aria-pressed={isSelected}
                   disabled={!isAvailable}

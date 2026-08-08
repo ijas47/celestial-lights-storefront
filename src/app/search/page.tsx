@@ -29,20 +29,20 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   if (!q) {
     return (
       <div className="min-h-[calc(100vh-8rem)]">
-        <section className="hero-aurora py-24 md:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-text-hi mb-4">
+        <section className="section">
+          <div className="mx-auto max-w-7xl gutter text-center">
+            <h1 className="text-label text-ink mb-4">
               Search the Catalog
             </h1>
-            <p className="text-text-mid mb-8">
-              Press <kbd className="px-2 py-1 rounded border border-line-strong bg-night-800">⌘K</kbd> to search or browse by category below
+            <p className="text-ink-mid">
+              Press <kbd className="px-2 py-1 border border-line-strong text-ink-mid">⌘K</kbd> to search or browse by category below
             </p>
           </div>
         </section>
 
         {/* Popular Categories */}
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-          <h2 className="font-display text-2xl font-bold text-text-hi mb-8 text-center">
+        <div className="mx-auto max-w-7xl gutter py-16">
+          <h2 className="text-label text-ink mb-8 text-center">
             Popular Collections
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -50,12 +50,12 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
               <Link
                 key={cat?.slug}
                 href={`/collections/${cat?.slug}`}
-                className="glow-card rounded-card p-8 bg-night-800 hover:bg-night-700 transition-colors text-center"
+                className="border border-line hover:bg-well transition-colors p-8 text-center"
               >
-                <h3 className="font-display text-xl text-text-hi font-bold">
+                <h3 className="text-body-sm text-ink">
                   {cat?.name}
                 </h3>
-                <p className="text-sm text-text-mid mt-2">
+                <p className="text-body text-ink-mid mt-2">
                   {cat?.description}
                 </p>
               </Link>
@@ -77,12 +77,12 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   if (!results) {
     return (
       <div className="min-h-[calc(100vh-8rem)]">
-        <section className="py-24 md:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-display text-3xl font-bold text-text-hi mb-4">
+        <section className="section">
+          <div className="mx-auto max-w-7xl gutter text-center">
+            <h1 className="text-label text-ink mb-4">
               Search unavailable
             </h1>
-            <p className="text-text-mid">
+            <p className="text-ink-mid">
               Please try again later
             </p>
           </div>
@@ -97,21 +97,21 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   if (products.length === 0) {
     return (
         <div className="min-h-[calc(100vh-8rem)]">
-          <section className="py-24 md:py-32">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="font-display text-3xl md:text-4xl font-bold text-text-hi mb-8">
+          <section className="section">
+            <div className="mx-auto max-w-7xl gutter text-center">
+              <h1 className="text-label text-ink mb-8">
                 Nothing found
               </h1>
-              <p className="text-text-mid mb-12">
+              <p className="text-ink-mid mb-12">
                 Try a different search term or browse our collections
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+              <div className="flex flex-wrap items-center justify-center gap-8 max-w-2xl mx-auto">
                 {popularCategories.map((cat) => (
                   <Link
                     key={cat?.slug}
                     href={`/collections/${cat?.slug}`}
-                    className="inline-block px-4 py-2 rounded-pill border border-line-strong hover:border-ember-500 text-text-mid hover:text-ember-300 transition-colors text-sm"
+                    className="rule-link text-ink"
                   >
                     {cat?.name}
                   </Link>
@@ -126,13 +126,13 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     // Results
     return (
       <div className="min-h-[calc(100vh-8rem)]">
-        <section className="py-12 md:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="section-tight">
+          <div className="mx-auto max-w-7xl gutter">
             <div className="mb-8">
-              <h1 className="font-display text-3xl font-bold text-text-hi mb-2">
+              <h1 className="text-label text-ink mb-2">
                 Results for &ldquo;{q}&rdquo;
               </h1>
-              <p className="text-text-mid">
+              <p className="text-ink-mid">
                 Found {totalCount} product{totalCount !== 1 ? 's' : ''}
               </p>
             </div>

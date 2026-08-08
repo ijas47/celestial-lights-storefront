@@ -4,34 +4,45 @@ import { SearchTrigger } from '@/components/search/search-dialog';
 import { CartButton } from '@/components/cart/cart-button';
 import { MobileNav } from './mobile-nav';
 
+/**
+ * Six primary categories only — all ten overflow the bar and wrap.
+ * The full index lives on the homepage and in the mobile sheet.
+ */
+const PRIMARY_NAV = CATEGORIES.slice(0, 6);
+
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-night-900/80 backdrop-blur">
+    <header className="sticky top-0 z-40 bg-paper">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 gap-4">
-          {/* Mobile Nav Trigger */}
+        <div className="flex h-16 items-center gap-6">
           <MobileNav />
 
-          {/* Logo */}
-          <Link href="/" className="font-display text-lg tracking-wide text-text-hi">
+          <Link
+            href="/"
+            className="whitespace-nowrap text-label font-bold tracking-[0.18em] text-ink"
+          >
             Celestial Lights
           </Link>
 
-          {/* Navigation (Desktop Only) */}
-          <nav className="hidden lg:flex gap-8 flex-1 ml-8">
-            {CATEGORIES.map((cat) => (
+          <nav className="hidden flex-1 justify-center gap-6 lg:flex xl:gap-8">
+            {PRIMARY_NAV.map((cat) => (
               <Link
                 key={cat.slug}
                 href={`/collections/${cat.slug}`}
-                className="text-sm text-text-mid hover:text-ember-300 transition-colors"
+                className="text-label whitespace-nowrap text-ink transition-opacity hover:opacity-55"
               >
                 {cat.shortName || cat.name}
               </Link>
             ))}
+            <Link
+              href="/#categories"
+              className="text-label whitespace-nowrap text-ink-mid transition-opacity hover:opacity-55"
+            >
+              All
+            </Link>
           </nav>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-4 ml-auto">
+          <div className="ml-auto flex items-center gap-5">
             <SearchTrigger />
             <CartButton />
           </div>

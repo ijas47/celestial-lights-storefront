@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { ProductCardData } from '@/lib/types';
-import { Badge } from '@/components/ui/badge';
 import { Price } from './price';
 
 interface ProductCardProps {
@@ -10,51 +9,53 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, preloadImage }: ProductCardProps) {
-  const { handle, title, availableForSale, featuredImage, priceRange, compareAtPriceRange } = product;
+  const {
+    handle,
+    title,
+    availableForSale,
+    featuredImage,
+    priceRange,
+    compareAtPriceRange,
+  } = product;
 
   return (
-    <Link href={`/products/${handle}`}>
-      <div className="glow-card rounded-card overflow-hidden bg-night-800 transition-transform group">
-        {/* Image Container */}
-        <div className="relative aspect-square overflow-hidden bg-night-800">
-          {featuredImage ? (
-            <Image
-              src={featuredImage.url}
-              alt={featuredImage.altText || title}
-              fill
-              sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
-              preload={preloadImage}
-              className="object-cover group-hover:scale-104 transition-transform"
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center text-text-low">
-              ✦
-            </div>
-          )}
-        </div>
-
-        {/* Content */}
-        <div className="p-4">
-          {/* Title */}
-          <h3 className="line-clamp-2 text-text-hi font-medium text-sm mb-3 min-h-[2.6em]">
-            {title}
-          </h3>
-
-          {/* Price */}
-          <div className="mb-3">
-            <Price
-              amount={priceRange.minVariantPrice.amount}
-              compareAtAmount={compareAtPriceRange.minVariantPrice.amount}
-              currencyCode={priceRange.minVariantPrice.currencyCode}
-              size="sm"
-            />
+    <Link href={`/products/${handle}`} className="group block">
+      {/* Catalog image treatment: full-bleed object-contain in a square well.
+          The hairline border keeps white-background product shots defined
+          against the white page. */}
+      <div className="well relative aspect-square border border-line">
+        {featuredImage ? (
+          <Image
+            src={featuredImage.url}
+            alt={featuredImage.altText || title}
+            fill
+            sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
+            preload={preloadImage}
+            className="object-contain"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center">
+            <span className="caps text-label-sm text-ink-low">No image</span>
           </div>
+        )}
+        {!availableForSale && (
+          <span className="caps absolute left-4 top-4 bg-paper px-2 py-1 text-label-sm text-ink-mid">
+            Sold out
+          </span>
+        )}
+      </div>
 
-          {/* Status Badge */}
-          {!availableForSale && (
-            <Badge tone="danger">Sold out</Badge>
-          )}
-        </div>
+      <h3 className="caps-tight mt-4 line-clamp-2 min-h-[2.7em] text-product text-ink">
+        {title}
+      </h3>
+
+      <div className="mt-1.5">
+        <Price
+          amount={priceRange.minVariantPrice.amount}
+          compareAtAmount={compareAtPriceRange.minVariantPrice.amount}
+          currencyCode={priceRange.minVariantPrice.currencyCode}
+          size="sm"
+        />
       </div>
     </Link>
   );

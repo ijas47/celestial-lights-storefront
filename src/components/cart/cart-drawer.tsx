@@ -80,23 +80,13 @@ export function CartDrawer() {
   const isEmpty = !pending && (!cart || cart.lines.length === 0);
   const hasItems = !pending && cart && cart.lines.length > 0;
 
-  // Calculate total savings
-  const totalSavings = hasItems && cart
-    ? cart.lines.reduce((sum, line) => {
-        const compareAt = Number(line.merchandise.compareAtPrice?.amount || 0);
-        const price = Number(line.merchandise.price.amount);
-        const savings = Math.max(0, (compareAt - price) * line.quantity);
-        return sum + savings;
-      }, 0)
-    : 0;
-
   return (
     <>
       {/* Overlay */}
       <div
         ref={overlayRef}
         onClick={closeCart}
-        className={`fixed inset-0 z-50 bg-night-950/70 transition-opacity duration-300 pointer-events-none ${
+        className={`fixed inset-0 z-50 bg-ink/20 transition-opacity duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-none ${
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0'
         }`}
         aria-hidden="true"
@@ -105,7 +95,7 @@ export function CartDrawer() {
       {/* Panel */}
       <div
         ref={panelRef}
-        className={`fixed right-0 inset-y-0 z-50 w-full max-w-md bg-night-900 border-l border-line-strong flex flex-col transition-transform duration-300 ${
+        className={`fixed right-0 inset-y-0 z-50 w-full max-w-md bg-paper border-l border-ink flex flex-col transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
@@ -114,11 +104,13 @@ export function CartDrawer() {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-5 border-b border-line-strong">
-          <h2 className="text-xl font-display text-text-hi">Your Cart</h2>
+          <h2 className="caps text-label text-ink">
+            Bag ({cart?.totalQuantity ?? 0})
+          </h2>
           <button
             ref={closeButtonRef}
             onClick={closeCart}
-            className="text-2xl text-text-mid hover:text-text-hi transition-colors focus-visible:ring-1 ring-ember-500 outline-none rounded"
+            className="text-display-md text-ink-mid transition-colors hover:text-ink"
             aria-label="Close cart"
           >
             ×
@@ -142,25 +134,19 @@ export function CartDrawer() {
             </div>
           ) : isEmpty ? (
             // Empty state
-            <div className="flex flex-col items-center justify-center p-5 py-12 text-center">
-              <div className="text-4xl mb-4">✦</div>
-              <p className="text-text-hi font-medium mb-2">
-                Your cart is empty
-              </p>
-              <p className="text-text-mid text-sm mb-6">
-                Explore our collection of premium chandeliers
-              </p>
+            <div className="flex flex-col items-center justify-center p-5 py-16 text-center">
+              <p className="caps text-label text-ink mb-5">Your bag is empty</p>
               <Link
                 href="/collections/chandeliers"
                 onClick={closeCart}
-                className="text-ember-300 hover:text-ember-400 transition-colors text-sm font-medium"
+                className="rule-link"
               >
-                Explore Chandeliers
+                Shop chandeliers
               </Link>
             </div>
           ) : hasItems && cart ? (
             // Cart lines
-            <div className="divide-y divide-line">
+            <div className="divide-y divide-line px-5">
               {cart.lines.map((line) => (
                 <CartLineItem key={line.id} line={line} />
               ))}
@@ -172,34 +158,24 @@ export function CartDrawer() {
         {hasItems && cart && (
           <div className="border-t border-line p-5 space-y-3">
             {/* Subtotal */}
-            <div className="flex justify-between text-sm">
-              <span className="text-text-mid">Subtotal</span>
-              <span className="text-text-hi font-tabular-nums">
+            <div className="flex items-baseline justify-between">
+              <span className="caps text-label-sm text-ink-mid">Subtotal</span>
+              <span className="text-price tabular-nums text-ink">
                 {formatPrice(cart.cost.subtotalAmount.amount)}
               </span>
             </div>
 
-            {/* Savings */}
-            {totalSavings > 0 && (
-              <div className="flex justify-between text-sm">
-                <span className="text-success">You save</span>
-                <span className="text-success font-tabular-nums">
-                  {formatPrice(String(totalSavings))}
-                </span>
-              </div>
-            )}
-
             {/* Checkout button */}
             <a
               href={cart.checkoutUrl}
-              className="block w-full py-3 px-4 rounded-pill text-center font-medium transition-all bg-gradient-to-b from-ember-300 to-ember-400 text-night-950 hover:brightness-110 focus-visible:ring-1 ring-ember-500 outline-none"
+              className="btn-solid flex w-full items-center justify-center px-8 py-4 text-label text-center"
             >
               Checkout · {formatPrice(cart.cost.totalAmount.amount)}
             </a>
 
             {/* Microcopy */}
-            <p className="text-xs text-text-low text-center">
-              Secure checkout via Shopify · UPI, cards & netbanking
+            <p className="caps text-label-sm text-ink-low text-center">
+              Secure checkout via Shopify
             </p>
           </div>
         )}

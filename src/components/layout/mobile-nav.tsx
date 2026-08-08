@@ -35,7 +35,7 @@ export function MobileNav() {
       {/* Hamburger Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="lg:hidden p-2 text-text-mid hover:text-text-hi transition-colors"
+        className="lg:hidden p-2 text-ink hover:opacity-55 transition-opacity"
         aria-label="Open menu"
       >
         <svg
@@ -56,26 +56,26 @@ export function MobileNav() {
       {/* Mobile Menu */}
       {open && (
         <>
-          {/* Overlay */}
+          {/* Overlay (transparent — panel is full-bleed, click still closes) */}
           <div
-            className="fixed inset-0 z-40 bg-night-950/80 backdrop-blur lg:hidden"
+            className="fixed inset-0 z-40 lg:hidden"
             onClick={() => setOpen(false)}
           />
 
           {/* Panel */}
           <div
-            className="fixed inset-0 z-50 bg-night-950/95 backdrop-blur overflow-y-auto lg:hidden"
+            className="fixed inset-0 z-50 bg-paper overflow-y-auto lg:hidden"
             role="dialog"
             aria-modal="true"
           >
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-line">
-              <div className="font-display text-lg font-bold text-text-hi">
+              <div className="text-label text-ink">
                 Celestial Lights
               </div>
               <button
                 onClick={() => setOpen(false)}
-                className="p-2 text-text-mid hover:text-text-hi transition-colors"
+                className="p-2 text-ink hover:opacity-55 transition-opacity"
                 aria-label="Close menu"
               >
                 <svg
@@ -95,13 +95,13 @@ export function MobileNav() {
             </div>
 
             {/* Navigation Links */}
-            <nav className="p-4 space-y-0">
+            <nav className="p-4">
               {CATEGORIES.map((cat, index) => (
                 <Link
                   key={cat.slug}
                   href={`/collections/${cat.slug}`}
                   onClick={() => setOpen(false)}
-                  className="font-display text-xl font-display text-text-hi hover:text-ember-300 transition-colors py-3 block animate-fade-up"
+                  className="text-label text-ink hover:opacity-55 transition-opacity py-4 block border-b border-line animate-fade-in"
                   style={{
                     animationDelay: `${index * 50}ms`,
                   }}

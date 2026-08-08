@@ -1,40 +1,55 @@
 import Link from 'next/link';
-import { buttonClasses } from '@/components/ui/button';
+import Image from 'next/image';
+import type { ShopImage } from '@/lib/types';
 
-export function Hero() {
+interface HeroProps {
+  image: ShopImage | null;
+  href: string;
+}
+
+/**
+ * Split hero: copy panel left, image panel right. Deliberately NOT an
+ * overlay — the catalog mixes cutout product shots with dark lifestyle
+ * photography, and text over an unpredictable image is unreadable.
+ *
+ * Editorial image treatment: object-cover, no multiply blend. The source
+ * image is curated in lib/homepage.ts, not taken from sort order.
+ */
+export function Hero({ image, href }: HeroProps) {
   return (
-    <section className="hero-aurora min-h-[70vh] flex items-center justify-center px-4 py-12">
-      <div className="max-w-3xl w-full text-center flex flex-col items-center animate-fade-up">
-        {/* Eyebrow */}
-        <p className="text-ember-300 text-sm tracking-[0.2em] uppercase mb-6">
-          Celestial Lights
-        </p>
+    <section className="grid grid-cols-1 border-b border-line md:grid-cols-2">
+      <div className="order-2 flex flex-col justify-center bg-paper gutter py-14 md:order-1 md:py-24">
+        <p className="caps text-label-sm text-ink-mid">Celestial Lights</p>
 
-        {/* Main Heading */}
-        <h1 className="font-display text-5xl md:text-7xl leading-[1.05] text-glow mb-6">
-          Light your home like the night sky
+        <h1 className="caps mt-5 text-display-xl text-ink">
+          Light,
+          <br />
+          Made Objects
         </h1>
 
-        {/* Supporting Line */}
-        <p className="text-text-mid text-lg max-w-xl mb-10">
-          Chandeliers, pendants and warm architectural light — 800+ designer fixtures, shipped across India.
+        <p className="mt-5 max-w-[40ch] text-body-lg text-ink-mid">
+          Eight hundred and thirty designer luminaires — sculpted in crystal,
+          marble, glass and brass. Made for the Indian home.
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <Link
-            href="/collections/chandeliers"
-            className={`${buttonClasses('ember', 'md')} rounded-full px-6 py-3 text-base focus-visible:ring-2 focus-visible:ring-ember-500`}
-          >
-            Shop Chandeliers
-          </Link>
-          <Link
-            href="#categories"
-            className={`${buttonClasses('ghost', 'md')} focus-visible:ring-2 focus-visible:ring-ember-500`}
-          >
-            Browse all categories
+        <div>
+          <Link href={href} className="rule-link mt-7 text-ink">
+            Shop lighting
           </Link>
         </div>
+      </div>
+
+      <div className="relative order-1 min-h-[340px] bg-well md:order-2 md:min-h-[620px]">
+        {image && (
+          <Image
+            src={image.url}
+            alt={image.altText || 'Celestial Lights'}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            preload
+            className="object-cover"
+          />
+        )}
       </div>
     </section>
   );

@@ -68,18 +68,18 @@ export function CartLineItem({ line }: CartLineItemProps) {
         <Link
           href={`/products/${product.handle}`}
           onClick={closeCart}
-          className="flex-shrink-0 w-16 h-16 bg-night-800 rounded overflow-hidden focus-visible:ring-1 ring-ember-500 outline-none"
+          className="well flex-shrink-0 w-[72px] h-[72px] overflow-hidden p-2"
         >
           {productImage ? (
             <Image
               src={productImage.url}
               alt={productImage.altText || title}
-              width={64}
-              height={64}
-              className="w-full h-full object-cover"
+              width={72}
+              height={72}
+              className="h-full w-full object-contain"
             />
           ) : (
-            <div className="w-full h-full bg-night-700" />
+            <div className="h-full w-full" />
           )}
         </Link>
 
@@ -88,37 +88,39 @@ export function CartLineItem({ line }: CartLineItemProps) {
           <Link
             href={`/products/${product.handle}`}
             onClick={closeCart}
-            className="block text-sm text-text-hi line-clamp-1 hover:text-ember-300 transition-colors focus-visible:ring-1 ring-ember-500 outline-none rounded"
+            className="text-product caps-tight block text-ink line-clamp-1 transition-colors hover:text-ink-mid"
           >
             {product.title}
           </Link>
 
           {variantDisplay && (
-            <p className="text-xs text-text-low mt-0.5">{variantDisplay}</p>
+            <p className="text-body-sm text-ink-low mt-1">{variantDisplay}</p>
           )}
 
-          <p className="text-sm font-tabular-nums text-text-hi mt-1">
+          <p className="text-price tabular-nums text-ink mt-1.5">
             {formatPrice(line.cost.totalAmount.amount)}
           </p>
         </div>
 
         {/* Actions */}
         <div className="flex flex-col items-end justify-between">
-          <div className="flex items-center gap-1 border border-line rounded-pill p-0.5">
+          <div className="flex items-center gap-1 border border-line p-0.5">
             <button
               onClick={() => handleUpdateQuantity(line.quantity - 1)}
-              className="w-6 h-6 flex items-center justify-center leading-none text-text-mid hover:text-text-hi focus-visible:ring-1 ring-ember-500 outline-none transition-colors"
+              className="w-6 h-6 flex items-center justify-center leading-none text-ink-mid hover:text-ink active:scale-95 duration-[120ms]"
+              style={{ transition: 'color 200ms var(--ease-out), transform 120ms var(--ease-out)' }}
               aria-label="Decrease quantity"
               disabled={isPending}
             >
               −
             </button>
-            <span className="w-6 text-center text-xs font-medium text-text-hi">
+            <span className="w-6 text-center text-product text-ink">
               {line.quantity}
             </span>
             <button
               onClick={() => handleUpdateQuantity(line.quantity + 1)}
-              className="w-6 h-6 flex items-center justify-center leading-none text-text-mid hover:text-text-hi focus-visible:ring-1 ring-ember-500 outline-none transition-colors"
+              className="w-6 h-6 flex items-center justify-center leading-none text-ink-mid hover:text-ink active:scale-95 duration-[120ms]"
+              style={{ transition: 'color 200ms var(--ease-out), transform 120ms var(--ease-out)' }}
               aria-label="Increase quantity"
               disabled={isPending}
             >
@@ -128,7 +130,7 @@ export function CartLineItem({ line }: CartLineItemProps) {
 
           <button
             onClick={handleRemove}
-            className="text-xs text-text-low underline hover:text-danger transition-colors focus-visible:ring-1 ring-ember-500 outline-none rounded"
+            className="caps text-label-sm text-ink-low underline transition-colors hover:text-ink"
             disabled={isPending}
           >
             Remove
@@ -137,7 +139,7 @@ export function CartLineItem({ line }: CartLineItemProps) {
       </div>
 
       {error && (
-        <p className="text-danger text-xs ml-20 mb-2" role="alert">
+        <p className="text-danger text-label-sm ml-20 mb-2" role="alert">
           {error}
         </p>
       )}

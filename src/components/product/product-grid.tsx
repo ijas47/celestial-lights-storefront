@@ -8,8 +8,8 @@ interface ProductGridProps {
 
 export function ProductGrid({ products, preloadCount = 0 }: ProductGridProps) {
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+    <div className="max-w-7xl mx-auto gutter py-8">
+      <div className="grid-products">
         {products.map((product, index) => (
           <ProductCard
             key={product.id}

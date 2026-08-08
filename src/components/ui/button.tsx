@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from 'react';
 
-type ButtonVariant = 'ember' | 'ghost' | 'outline';
+type ButtonVariant = 'solid' | 'ghost' | 'outline';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -10,28 +10,29 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function buttonClasses(
-  variant: ButtonVariant = 'ember',
+  variant: ButtonVariant = 'solid',
   size: ButtonSize = 'md'
 ): string {
-  const baseClasses = 'font-medium rounded-pill transition-all';
+  const base = 'inline-flex items-center justify-center';
 
-  const variantClasses = {
-    ember: 'btn-ember',
-    ghost: 'bg-transparent hover:bg-night-700',
-    outline: 'border border-line-strong hover:border-ember-500',
+  const variants = {
+    solid: 'btn-solid',
+    ghost: 'caps text-label text-ink hover:opacity-60 transition-opacity',
+    outline:
+      'caps text-label border border-ink text-ink transition-colors hover:bg-ink hover:text-ink-inverse',
   };
 
-  const sizeClasses = {
-    sm: 'px-3 py-1.5 text-sm',
-    md: 'px-4 py-2 text-base',
-    lg: 'px-6 py-3 text-lg',
+  const sizes = {
+    sm: 'px-4 py-2 text-label-sm',
+    md: 'px-6 py-3 text-label',
+    lg: 'px-8 py-4 text-label',
   };
 
-  return `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`;
+  return `${base} ${variants[variant]} ${sizes[size]}`;
 }
 
 export function Button({
-  variant = 'ember',
+  variant = 'solid',
   size = 'md',
   className,
   ...props

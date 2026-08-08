@@ -71,15 +71,12 @@ export default async function CategoryPage({
   // No more products on subsequent pages
   if (after && products.length === 0) {
     return (
-      <div className="min-h-screen max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <h1 className="font-display text-2xl text-text-hi mb-6">
+      <div className="min-h-screen max-w-7xl mx-auto gutter py-12">
+        <h1 className="mb-6 text-display-lg text-ink">
           {categoryData.name}
         </h1>
-        <p className="text-text-mid mb-6">No more products to display.</p>
-        <Link
-          href={`/collections/${categoryData.slug}`}
-          className="inline-block px-4 py-2 border border-line-strong rounded-pill text-sm text-text-mid hover:border-ember-500 transition-colors"
-        >
+        <p className="mb-6 text-ink-mid">No more products to display.</p>
+        <Link href={`/collections/${categoryData.slug}`} className="rule-link">
           Back to {categoryData.name}
         </Link>
       </div>
@@ -89,19 +86,19 @@ export default async function CategoryPage({
   // No products in category (shouldn't happen)
   if (products.length === 0 && !after) {
     return (
-      <div className="min-h-screen max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <h1 className="font-display text-2xl text-text-hi mb-6">
+      <div className="min-h-screen max-w-7xl mx-auto gutter py-12">
+        <h1 className="mb-6 text-display-lg text-ink">
           {categoryData.name}
         </h1>
-        <p className="text-text-mid mb-8">No products found in this category.</p>
-        <div className="flex gap-4 flex-wrap">
+        <p className="mb-8 text-ink-mid">No products found in this category.</p>
+        <div className="flex flex-wrap gap-3">
           {CATEGORIES.filter((c) => c.slug !== category)
             .slice(0, 5)
             .map((c) => (
               <Link
                 key={c.slug}
                 href={`/collections/${c.slug}`}
-                className="px-4 py-2 bg-night-800 border border-line rounded-pill text-sm text-text-mid hover:border-ember-500 transition-colors"
+                className="caps-tight text-label border border-line px-4 py-2 text-ink transition-colors hover:border-ink"
               >
                 {c.shortName || c.name}
               </Link>
@@ -124,24 +121,24 @@ export default async function CategoryPage({
         {...jsonLdScriptProps(breadcrumbJsonLd(breadcrumb))}
       />
 
-      {/* Hero Banner */}
-      <div className="border-b border-line hero-aurora">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-12">
-          <h1 className="font-display text-4xl text-text-hi mb-2">
+      {/* Page header */}
+      <div className="border-b border-line">
+        <div className="max-w-7xl mx-auto gutter pt-12 pb-6">
+          <h1 className="text-display-lg text-ink">
             {categoryData.name}
           </h1>
-          <p className="text-text-mid max-w-xl">
+          <p className="mt-4 max-w-[52ch] text-ink-mid">
             {categoryData.description}
           </p>
-        </div>
-      </div>
 
-      {/* Toolbar */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <p className="text-text-low text-sm">
-          Showing {productCount} products
-        </p>
-        <SortSelect current={sort} />
+          {/* Toolbar */}
+          <div className="mt-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+            <p className="caps text-label-sm text-ink-low">
+              Showing {productCount} products
+            </p>
+            <SortSelect current={sort} />
+          </div>
+        </div>
       </div>
 
       {/* Product Grid */}

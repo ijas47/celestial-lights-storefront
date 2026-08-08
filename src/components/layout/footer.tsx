@@ -3,20 +3,20 @@ import { CATEGORIES } from '@/lib/categories';
 
 export function Footer() {
   return (
-    <footer className="border-t border-line bg-night-900">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <footer className="border-t border-line bg-paper">
+      <div className="mx-auto max-w-7xl gutter section-tight">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Brand Column */}
           <div>
-            <div className="font-display text-lg font-bold text-text-hi mb-3">
+            <div className="text-label text-ink mb-3">
               Celestial Lights
             </div>
-            <p className="text-sm text-text-mid mb-4">
+            <p className="text-body text-ink-mid mb-4">
               Premium designer lighting for homes that glow.
             </p>
             <a
               href="mailto:support@celestiallights.in"
-              className="text-sm text-text-mid hover:text-ember-300 transition-colors"
+              className="text-label text-ink-mid hover:text-ink transition-colors"
             >
               support@celestiallights.in
             </a>
@@ -24,13 +24,13 @@ export function Footer() {
 
           {/* Shop Column */}
           <div>
-            <h3 className="font-display text-sm font-bold text-text-hi mb-4">Shop</h3>
+            <h3 className="text-label text-ink mb-4">Shop</h3>
             <nav className="space-y-2">
               {CATEGORIES.map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/collections/${cat.slug}`}
-                  className="text-sm text-text-mid hover:text-ember-300 transition-colors block"
+                  className="text-label text-ink-mid hover:text-ink transition-colors block"
                 >
                   {cat.name}
                 </Link>
@@ -42,11 +42,17 @@ export function Footer() {
           <div className="hidden lg:block" />
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-line pt-8">
-          <p className="text-xs text-text-low">
-            © 2026 Celestial Lights. All rights reserved.
+        {/* Bottom row */}
+        <div className="border-t border-line pt-8 flex flex-wrap items-center justify-between gap-2">
+          <p className="text-label-sm text-ink-mid">
+            © 2026 Celestial Lights
           </p>
+          <a
+            href="mailto:support@celestiallights.in"
+            className="text-label-sm text-ink-mid hover:text-ink transition-colors"
+          >
+            support@celestiallights.in
+          </a>
         </div>
       </div>
     </footer>

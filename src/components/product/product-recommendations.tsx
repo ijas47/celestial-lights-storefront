@@ -16,9 +16,9 @@ export async function ProductRecommendations({
   }
 
   return (
-    <section className="mx-auto max-w-7xl px-4 md:px-6 py-14">
+    <section className="mx-auto max-w-7xl gutter section-tight">
       <SectionHeading title="You may also like" />
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div className="grid-products">
         {recommendations.slice(0, 8).map((product) => (
           <ProductCard
             key={product.handle}

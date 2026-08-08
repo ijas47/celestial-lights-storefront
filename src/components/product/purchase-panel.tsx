@@ -58,7 +58,7 @@ export function PurchasePanel({ product }: PurchasePanelProps) {
           compareAtAmount={displayVariant.compareAtPrice?.amount}
           currencyCode={displayVariant.price.currencyCode}
         />
-        <p className="text-text-low text-xs mt-2">incl. taxes</p>
+        <p className="mt-2 text-label-sm text-ink-low">incl. taxes</p>
       </div>
 
       {/* Variant picker */}
@@ -83,8 +83,8 @@ export function PurchasePanel({ product }: PurchasePanelProps) {
       />
 
       {/* Trust row */}
-      <div className="text-text-low text-xs">
-        1-year warranty · Secure checkout · Ships across India
+      <div className="caps text-label-sm text-ink-mid">
+        1 year warranty · Ships across India
       </div>
     </div>
   );

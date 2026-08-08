@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Fraunces } from 'next/font/google';
+import { Archivo } from 'next/font/google';
 import './globals.css';
 import { CartProvider } from '@/components/cart/cart-provider';
 import { Header } from '@/components/layout/header';
@@ -8,20 +8,10 @@ import { CartDrawer } from '@/components/cart/cart-drawer';
 import { SearchDialog } from '@/components/search/search-dialog';
 import { baseUrl, jsonLdScriptProps, organizationJsonLd } from '@/lib/seo';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const archivo = Archivo({
+  variable: '--font-archivo',
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
-const fraunces = Fraunces({
-  variable: '--font-fraunces',
-  subsets: ['latin'],
-  axes: ['opsz'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -48,12 +38,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${archivo.variable} h-full antialiased`}
     >
       <head>
         <script {...jsonLdScriptProps(orgJsonLd)} />
       </head>
-      <body className="min-h-full flex flex-col bg-night-950 text-text-hi">
+      <body className="min-h-full flex flex-col bg-paper text-ink">
         <CartProvider>
           <Header />
           <main className="min-h-screen flex-1">{children}</main>

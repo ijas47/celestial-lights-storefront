@@ -39,8 +39,8 @@ export function Gallery({ images, title }: GalleryProps) {
 
   if (images.length === 0) {
     return (
-      <div className="relative aspect-square rounded-card overflow-hidden bg-night-800 flex items-center justify-center">
-        <div className="text-ember-300/40 text-4xl">✦</div>
+      <div className="well relative flex aspect-square items-center justify-center">
+        <span className="caps text-label-sm text-ink-low">No image</span>
       </div>
     );
   }
@@ -51,7 +51,7 @@ export function Gallery({ images, title }: GalleryProps) {
     <div>
       {/* Main viewport */}
       <div
-        className="relative aspect-square rounded-card overflow-hidden bg-night-800"
+        className="well relative aspect-square border border-line"
         tabIndex={0}
         aria-label={`${title} gallery — use arrow keys`}
         role="region"
@@ -63,7 +63,7 @@ export function Gallery({ images, title }: GalleryProps) {
           fill
           sizes="(max-width:1024px) 100vw, 50vw"
           preload={activeIndex === 0}
-          className="object-cover animate-fade-in"
+          className="object-contain animate-fade-in"
         />
       </div>
 
@@ -74,9 +74,9 @@ export function Gallery({ images, title }: GalleryProps) {
             <button
               key={`thumb-${index}`}
               onClick={() => setActiveIndex(index)}
-              className={`w-16 h-16 relative rounded overflow-hidden border transition-colors flex-shrink-0 focus-visible:ring focus-visible:ring-ember-500 ${
+              className={`well relative h-16 w-16 flex-shrink-0 border transition-colors ${
                 index === activeIndex
-                  ? 'border-ember-400'
+                  ? 'border-ink'
                   : 'border-line hover:border-line-strong'
               }`}
               aria-label={`View image ${index + 1} of ${images.length}`}
@@ -87,7 +87,7 @@ export function Gallery({ images, title }: GalleryProps) {
                 alt={image.altText ?? `${title} thumbnail ${index + 1}`}
                 fill
                 sizes="64px"
-                className="object-cover"
+                className="object-contain"
               />
             </button>
           ))}

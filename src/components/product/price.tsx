@@ -1,4 +1,4 @@
-import { formatPrice, discountPercent } from '@/lib/format';
+import { formatPrice } from '@/lib/format';
 
 interface PriceProps {
   amount: string;
@@ -7,36 +7,39 @@ interface PriceProps {
   size?: 'sm' | 'md' | 'lg';
 }
 
+/**
+ * Quiet pricing, by design decision: selling price in ink, MRP struck in grey.
+ * No percent-off badge — this system carries no accent colour, and discount
+ * badges are the first thing that would cheapen it.
+ */
 export function Price({
   amount,
   compareAtAmount,
   currencyCode = 'INR',
   size = 'md',
 }: PriceProps) {
-  const discount = discountPercent(amount, compareAtAmount);
+  const hasCompare =
+    compareAtAmount != null && Number(compareAtAmount) > Number(amount);
 
-  const sizeClasses = {
-    sm: 'text-sm',
-    md: 'text-base',
-    lg: 'text-lg',
-  };
+  const isLarge = size === 'lg';
 
   return (
-    <div className="flex items-baseline gap-2">
-      <span className={`text-ember-300 tabular-nums font-medium ${sizeClasses[size]}`}>
+    <div className="flex items-baseline gap-2.5">
+      <span
+        className={`tabular-nums text-ink ${
+          isLarge ? 'text-price-lg' : 'text-price'
+        }`}
+      >
         {formatPrice(amount, currencyCode)}
       </span>
-      {compareAtAmount && Number(compareAtAmount) > Number(amount) && (
-        <>
-          <span className="text-text-low line-through text-xs">
-            {formatPrice(compareAtAmount, currencyCode)}
-          </span>
-          {discount !== null && (
-            <span className="text-success text-xs font-semibold">
-              {discount}% off
-            </span>
-          )}
-        </>
+      {hasCompare && (
+        <span
+          className={`tabular-nums text-ink-mid line-through ${
+            isLarge ? 'text-body' : 'text-body-sm'
+          }`}
+        >
+          {formatPrice(compareAtAmount, currencyCode)}
+        </span>
       )}
     </div>
   );

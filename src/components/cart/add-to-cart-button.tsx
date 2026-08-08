@@ -37,7 +37,7 @@ export function AddToCartButton({
     });
   };
 
-  let label = 'Add to cart';
+  let label = 'Add to bag';
   if (!availableForSale) {
     label = 'Sold out';
   } else if (!variantId) {
@@ -51,7 +51,7 @@ export function AddToCartButton({
       <Button
         onClick={handleAddToCart}
         disabled={isDisabled}
-        variant="ember"
+        variant="solid"
         size="lg"
         className="w-full transition-opacity"
         style={{
@@ -63,7 +63,7 @@ export function AddToCartButton({
       </Button>
       {error && (
         <p
-          className="text-danger text-sm"
+          className="text-danger text-label-sm"
           role="alert"
           aria-live="polite"
         >

@@ -1,36 +1,30 @@
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/categories';
-import { SectionHeading } from '@/components/ui/section-heading';
 
+/**
+ * Full category index as a typographic list — no tiles, no glyphs.
+ * Reads as a table of contents rather than a set of buttons.
+ */
 export function CategoryTiles() {
   return (
-    <section id="categories" className="max-w-7xl mx-auto px-4 md:px-6 py-16">
-      <SectionHeading
-        title="Shop by Category"
-        subtitle="Ten collections, one warm glow"
-      />
+    <section id="categories" className="mx-auto max-w-7xl gutter section">
+      <h2 className="caps mb-6 border-b border-line pb-4 text-label text-ink">
+        All collections
+      </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {CATEGORIES.map((category) => (
           <Link
             key={category.slug}
             href={`/collections/${category.slug}`}
-            className="rounded-card border border-line bg-night-800 p-5 min-h-28 flex flex-col justify-between glow-card group focus-visible:ring-2 focus-visible:ring-ember-500 focus-visible:outline-none"
+            className="group flex items-baseline justify-between gap-6 border-b border-line py-5"
           >
-            {/* Top-right glyph */}
-            <div className="text-right">
-              <span className="text-ember-300/60 text-xl">✦</span>
-            </div>
-
-            {/* Category Info */}
-            <div>
-              <h3 className="font-display text-lg text-text-hi mb-1">
-                {category.name}
-              </h3>
-              <p className="line-clamp-2 text-xs text-text-low">
-                {category.description}
-              </p>
-            </div>
+            <span className="caps text-title text-ink transition-opacity group-hover:opacity-55">
+              {category.name}
+            </span>
+            <span className="caps shrink-0 text-label-sm text-ink-low">
+              View
+            </span>
           </Link>
         ))}
       </div>

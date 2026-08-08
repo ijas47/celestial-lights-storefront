@@ -3,5 +3,5 @@ interface SkeletonProps {
 }
 
 export function Skeleton({ className = '' }: SkeletonProps) {
-  return <div className={`skeleton rounded-card ${className}`} />;
+  return <div className={`skeleton ${className}`} />;
 }
