@@ -10,7 +10,7 @@ export default function NotFound() {
 
         {/* Message */}
         <p className="mt-4 text-ink-mid">
-          This light doesn&apos;t exist — but the rest of the collection does.
+          This light doesn&apos;t exist, but the rest of the collection does.
         </p>
 
         {/* Links */}

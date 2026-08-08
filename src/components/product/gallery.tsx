@@ -53,7 +53,7 @@ export function Gallery({ images, title }: GalleryProps) {
       <div
         className="well relative aspect-square border border-line"
         tabIndex={0}
-        aria-label={`${title} gallery — use arrow keys`}
+        aria-label={`${title} gallery, use arrow keys`}
         role="region"
       >
         <Image

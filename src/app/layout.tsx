@@ -17,11 +17,11 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   metadataBase: baseUrl,
   title: {
-    default: 'Celestial Lights — Premium Designer Lighting',
+    default: 'Celestial Lights | Premium Designer Lighting',
     template: '%s | Celestial Lights',
   },
   description:
-    'Premium chandeliers, wall lights, pendants and outdoor lighting. Designer fixtures with warm, atmospheric light — shipped across India.',
+    'Premium chandeliers, wall lights, pendants and outdoor lighting. Designer fixtures with warm, atmospheric light, shipped across India.',
   openGraph: {
     siteName: 'Celestial Lights',
     type: 'website',

@@ -66,7 +66,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     );
   }
 
-  // With query: fetch results (catch only around the fetch — JSX stays outside)
+  // With query: fetch results (catch only around the fetch, JSX stays outside)
   let results: Awaited<ReturnType<typeof searchProducts>> | null = null;
   try {
     results = await searchProducts(q, { first: 24, after });

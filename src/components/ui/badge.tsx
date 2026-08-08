@@ -6,7 +6,7 @@ interface BadgeProps {
 }
 
 /**
- * Monochrome by design — this system carries no accent colour, so badges
+ * Monochrome by design. This system carries no accent colour, so badges
  * differentiate by border and weight, never by hue (except true danger).
  */
 export function Badge({ tone = 'neutral', children }: BadgeProps) {

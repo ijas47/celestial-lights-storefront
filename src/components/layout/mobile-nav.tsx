@@ -56,7 +56,7 @@ export function MobileNav() {
       {/* Mobile Menu */}
       {open && (
         <>
-          {/* Overlay (transparent — panel is full-bleed, click still closes) */}
+          {/* Overlay (transparent, panel is full-bleed, click still closes) */}
           <div
             className="fixed inset-0 z-40 lg:hidden"
             onClick={() => setOpen(false)}

@@ -5,7 +5,7 @@ import { CartButton } from '@/components/cart/cart-button';
 import { MobileNav } from './mobile-nav';
 
 /**
- * Six primary categories only — all ten overflow the bar and wrap.
+ * Six primary categories only. All ten overflow the bar and wrap.
  * The full index lives on the homepage and in the mobile sheet.
  */
 const PRIMARY_NAV = CATEGORIES.slice(0, 6);

@@ -55,7 +55,7 @@ export default async function Home() {
 
       <CategoryTiles />
 
-      {/* Inverted band — the one dark surface in the system */}
+      {/* Inverted band, the one dark surface in the system */}
       <section className="bg-band gutter section">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
           <div>

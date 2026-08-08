@@ -9,7 +9,7 @@ interface HeroProps {
 
 /**
  * Split hero: copy panel left, image panel right. Deliberately NOT an
- * overlay — the catalog mixes cutout product shots with dark lifestyle
+ * overlay, the catalog mixes cutout product shots with dark lifestyle
  * photography, and text over an unpredictable image is unreadable.
  *
  * Editorial image treatment: object-cover, no multiply blend. The source
@@ -28,7 +28,7 @@ export function Hero({ image, href }: HeroProps) {
         </h1>
 
         <p className="mt-5 max-w-[42ch] text-body-lg text-ink-mid">
-          Sculpted in crystal, marble, glass and brass — chandeliers, pendants
+          Sculpted in crystal, marble, glass and brass. Chandeliers, pendants
           and architectural light for the Indian home.
         </p>
 
