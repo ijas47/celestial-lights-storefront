@@ -12,8 +12,8 @@ export function Footer() {
               Celestial Lights
             </div>
             <p className="mt-4 max-w-[34ch] text-body text-ink-mid">
-              Premium designer lighting for homes that glow. Eight hundred and
-              thirty fixtures, shipped across India.
+              Designer chandeliers, pendants and architectural lighting.
+              Shipped across India.
             </p>
             <a
               href="mailto:support@celestiallights.in"

@@ -27,9 +27,9 @@ export function Hero({ image, href }: HeroProps) {
           Made Objects
         </h1>
 
-        <p className="mt-5 max-w-[40ch] text-body-lg text-ink-mid">
-          Eight hundred and thirty designer luminaires — sculpted in crystal,
-          marble, glass and brass. Made for the Indian home.
+        <p className="mt-5 max-w-[42ch] text-body-lg text-ink-mid">
+          Sculpted in crystal, marble, glass and brass — chandeliers, pendants
+          and architectural light for the Indian home.
         </p>
 
         <div>

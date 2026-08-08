@@ -55,7 +55,7 @@ export default function Image() {
             color: '#767676',
           }}
         >
-          830 designer luminaires — shipped across India
+          Designer lighting, shipped across India
         </div>
       </div>
     ),
