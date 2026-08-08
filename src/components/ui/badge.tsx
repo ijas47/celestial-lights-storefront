@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 interface BadgeProps {
-  tone?: 'ember' | 'neutral' | 'danger';
+  tone?: 'strong' | 'neutral' | 'danger';
   children: ReactNode;
 }
 
@@ -11,7 +11,7 @@ interface BadgeProps {
  */
 export function Badge({ tone = 'neutral', children }: BadgeProps) {
   const tones = {
-    ember: 'border-ink text-ink',
+    strong: 'border-ink text-ink',
     neutral: 'border-line-strong text-ink-mid',
     danger: 'border-danger text-danger',
   };

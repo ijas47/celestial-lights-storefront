@@ -124,6 +124,18 @@ body {
 
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
+/* Modal entrance: scale from an already-visible 0.97, never from 0 —
+   nothing in the real world appears out of nothing. Origin stays centre
+   because a modal is not anchored to a trigger. */
+@keyframes dialog-in {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: none; }
+}
+.animate-dialog-in {
+  transform-origin: center;
+  animation: dialog-in var(--duration-dialog) var(--ease-out) both;
+}
+
 /* ============================================================
    UPPERCASE TYPE ROLES
    These three carry text-transform as part of the role, because
@@ -173,13 +185,23 @@ body {
 .section-tight { padding-block: 2.5rem; }
 @media (min-width: 768px) { .section-tight { padding-block: 3.5rem; } }
 
+/* 2-up phone, 3-up tablet, 4-up desktop. Going 4-up at 768 produced
+   148px cards, which is too narrow for a two-line uppercase title
+   plus a price row. */
 .grid-products {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 1.5rem;
-  row-gap: 3rem;
+  column-gap: 1.25rem;
+  row-gap: 2.75rem;
 }
 @media (min-width: 768px) {
+  .grid-products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 1.75rem;
+    row-gap: 3.25rem;
+  }
+}
+@media (min-width: 1024px) {
   .grid-products {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 2rem;
@@ -281,4 +303,11 @@ body {
   }
   .rule-link:active,
   .btn-solid:active { transform: none; }
+
+  /* Keep a short cross-fade rather than a hard snap: reduced motion means
+     gentler, not absent. Class specificity beats the universal rule above. */
+  .animate-dialog-in,
+  .animate-fade-in {
+    animation: fade-in 150ms ease-out both !important;
+  }
 }

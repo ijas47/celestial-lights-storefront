@@ -4,11 +4,7 @@ export default function NotFound() {
   return (
     <section className="flex min-h-[60vh] items-center justify-center px-4 py-12">
       <div className="flex w-full max-w-md flex-col items-center text-center">
-        {/* Eyebrow */}
-        <p className="caps text-label text-ink-mid">404</p>
-
-        {/* Heading */}
-        <h1 className="mt-4 text-display-lg text-ink">
+        <h1 className="caps text-display-lg text-ink">
           Page not found
         </h1>
 

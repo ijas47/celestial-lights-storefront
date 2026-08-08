@@ -32,8 +32,8 @@ export function CartButton() {
       aria-label={`Open cart (${count} items)`}
     >
       <span
-        className={`inline-block transition-all duration-200 ${
-          isPopping ? 'scale-125 opacity-70' : 'scale-100 opacity-100'
+        className={`inline-block transition-[transform,opacity] duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] ${
+          isPopping ? 'scale-110 opacity-70' : 'scale-100 opacity-100'
         }`}
       >
         Bag ({count})

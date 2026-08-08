@@ -19,9 +19,9 @@ export function Hero({ image, href }: HeroProps) {
   return (
     <section className="grid grid-cols-1 border-b border-line md:grid-cols-2">
       <div className="order-2 flex flex-col justify-center bg-paper gutter py-14 md:order-1 md:py-24">
-        <p className="caps text-label-sm text-ink-mid">Celestial Lights</p>
-
-        <h1 className="caps mt-5 text-display-xl text-ink">
+        {/* No eyebrow: the wordmark already sits 60px above this in the
+            header, and the heading carries its own weight. */}
+        <h1 className="caps text-display-xl text-ink">
           Light,
           <br />
           Made Objects

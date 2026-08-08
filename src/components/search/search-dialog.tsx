@@ -122,7 +122,7 @@ export function SearchDialog() {
       <div className="fixed inset-0 z-50 flex items-start justify-center pointer-events-none mt-[10vh]">
         <div className="pointer-events-auto w-full max-w-xl mx-auto px-4">
           <div
-            className="bg-paper border border-ink overflow-hidden animate-fade-in"
+            className="bg-paper border border-ink overflow-hidden animate-dialog-in"
             role="dialog"
             aria-modal="true"
             aria-label="Search products"
@@ -183,8 +183,10 @@ export function SearchDialog() {
                               className="w-full h-full object-contain"
                             />
                           ) : (
-                            <div className="w-full h-full flex items-center justify-center text-ink-low text-body">
-                              ✦
+                            <div className="flex h-full w-full items-center justify-center">
+                              <span className="text-label-sm text-ink-low">
+                                No image
+                              </span>
                             </div>
                           )}
                         </div>

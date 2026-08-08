@@ -86,8 +86,10 @@ export function CartDrawer() {
       <div
         ref={overlayRef}
         onClick={closeCart}
-        className={`fixed inset-0 z-50 bg-ink/20 transition-opacity duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-none ${
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0'
+        className={`fixed inset-0 z-50 bg-ink/20 transition-opacity ease-[cubic-bezier(0.32,0.72,0,1)] pointer-events-none ${
+          isOpen
+            ? 'opacity-100 duration-300 pointer-events-auto'
+            : 'opacity-0 duration-200'
         }`}
         aria-hidden="true"
       />
@@ -95,8 +97,8 @@ export function CartDrawer() {
       {/* Panel */}
       <div
         ref={panelRef}
-        className={`fixed right-0 inset-y-0 z-50 w-full max-w-md bg-paper border-l border-ink flex flex-col transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed right-0 inset-y-0 z-50 w-full max-w-md bg-paper border-l border-ink flex flex-col transition-transform ease-[cubic-bezier(0.32,0.72,0,1)] ${
+          isOpen ? 'translate-x-0 duration-300' : 'translate-x-full duration-200'
         }`}
         role="dialog"
         aria-modal="true"
@@ -110,10 +112,23 @@ export function CartDrawer() {
           <button
             ref={closeButtonRef}
             onClick={closeCart}
-            className="text-display-md text-ink-mid transition-colors hover:text-ink"
+            className="p-1 text-ink-mid transition-colors hover:text-ink"
             aria-label="Close cart"
           >
-            ×
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
           </button>
         </div>
 
