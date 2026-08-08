@@ -3,7 +3,7 @@
  *
  * The hero deliberately does NOT use "whatever Shopify sorts first". The
  * catalog mixes cutout-on-white studio shots with dark lifestyle room shots,
- * and only the latter work full-bleed — a centred cutout gets cropped out of
+ * and only the latter work full-bleed, a centred cutout gets cropped out of
  * frame by object-cover and the panel reads as empty.
  *
  * List preferred hero products in order. The first one that resolves and has

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { CATEGORIES } from '@/lib/categories';
 
 /**
- * Full category index as a typographic list — no tiles, no glyphs.
+ * Full category index as a typographic list. No tiles, no glyphs.
  * Reads as a table of contents rather than a set of buttons.
  *
  * The row itself is the link, so it carries no "View" label: ten repeated

@@ -36,7 +36,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: 'ceiling-fans',
     name: 'Ceiling Fans',
-    description: 'Chandelier ceiling fans — moving air without giving up sparkle.',
+    description: 'Chandelier ceiling fans that move air without giving up sparkle.',
     query: 'product_type:"Chandelier Ceiling Fan" OR tag:"ceiling fan" OR tag:"chandelier fan"',
   },
   {

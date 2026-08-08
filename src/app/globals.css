@@ -11,7 +11,7 @@
   --color-band: #000000;         /* inverted band section */
 
   /* ============================================================
-     INK — there is deliberately NO accent colour in this system.
+     INK, there is deliberately NO accent colour in this system.
      Colour comes from the products themselves.
      ============================================================ */
   --color-ink: #000000;
@@ -26,7 +26,7 @@
   --color-danger: #b3261e;
 
   /* ============================================================
-     TYPE — 12 semantic roles. Each carries size + leading +
+     TYPE, 12 semantic roles. Each carries size + leading +
      tracking + weight as a set, because hierarchy comes from the
      set, not from size alone. Tracking is size-specific:
      negative on display, ~0 on body, positive on small caps.
@@ -71,7 +71,7 @@
   --text-body-sm--font-weight: 400;
 
   /* label / label-sm / product roles are defined as @utility below, not
-     here, because they must also carry text-transform — which @theme text
+     here, because they must also carry text-transform, which @theme text
      tokens cannot express. Case is part of those roles' identity.
      Their raw values live here so .rule-link and .btn-solid can share them. */
   --label-size: 0.6875rem;
@@ -90,13 +90,13 @@
   --text-price-lg--font-weight: 500;
 
   /* ============================================================
-     GEOMETRY — sharp, no rounding anywhere.
+     GEOMETRY, sharp, no rounding anywhere.
      ============================================================ */
   --radius-card: 0px;
   --radius-pill: 0px;
 
   /* ============================================================
-     MOTION — nothing over 300ms. ease-in is banned: it delays the
+     MOTION, nothing over 300ms. ease-in is banned: it delays the
      first frame, which is the exact moment the user is watching.
      ============================================================ */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
@@ -124,7 +124,7 @@ body {
 
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
-/* Modal entrance: scale from an already-visible 0.97, never from 0 —
+/* Modal entrance: scale from an already-visible 0.97, never from 0 , 
    nothing in the real world appears out of nothing. Origin stays centre
    because a modal is not anchored to a trigger. */
 @keyframes dialog-in {
@@ -141,7 +141,7 @@ body {
    These three carry text-transform as part of the role, because
    in this system they are ONLY ever used for uppercase text.
    Baking case in makes it impossible to apply the role and
-   forget the case — a whole class of error removed rather than
+   forget the case, a whole class of error removed rather than
    patched at each call site.
    ============================================================ */
 @utility text-label {
@@ -174,7 +174,7 @@ body {
 .caps-tight { text-transform: uppercase; }
 
 /* ============================================================
-   LAYOUT PRIMITIVES — stop per-file padding drift.
+   LAYOUT PRIMITIVES, stop per-file padding drift.
    ============================================================ */
 .gutter { padding-inline: 1.5rem; }
 @media (min-width: 768px) { .gutter { padding-inline: 2.5rem; } }
@@ -211,7 +211,7 @@ body {
 
 /* ============================================================
    ACTIONS
-   Press feedback on every pressable element — instant, on
+   Press feedback on every pressable element, instant, on
    pointer-down, so the interface feels like it is listening.
    ============================================================ */
 .rule-link {
@@ -245,7 +245,7 @@ body {
   transform: none;
 }
 
-/* Hover intent only where a real pointer exists — touch devices
+/* Hover intent only where a real pointer exists, touch devices
    fire :hover on tap, which causes sticky false states. */
 @media (hover: hover) and (pointer: fine) {
   .rule-link:hover { opacity: 0.6; }
@@ -253,7 +253,7 @@ body {
 }
 
 /* ============================================================
-   IMAGE TREATMENT — catalog treatment.
+   IMAGE TREATMENT, catalog treatment.
    Multiply blend dissolves inconsistent white-background product
    photography into the well. Pair with object-contain, never
    object-cover (which crops product shots out of frame).
@@ -282,7 +282,7 @@ body {
 }
 @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
 
-/* Focus visibility — 1px ink outline, no colour. */
+/* Focus visibility, 1px ink outline, no colour. */
 :where(a, button, input, select, textarea):focus-visible {
   outline: 1.5px solid var(--color-ink);
   outline-offset: 2px;

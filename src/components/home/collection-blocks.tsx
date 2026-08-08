@@ -14,7 +14,7 @@ interface CollectionBlocksProps {
 }
 
 /**
- * Two-up editorial blocks — the signature layout gesture of this system.
+ * Two-up editorial blocks. The signature layout gesture of this system.
  * Editorial image treatment (object-cover, no blend); alternating well tones
  * keep the pair from reading as one flat band.
  */

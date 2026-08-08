@@ -23,7 +23,7 @@ export function Footer() {
             </a>
           </div>
 
-          {/* Shop — the full index, two columns so it fills the width
+          {/* Shop, the full index, two columns so it fills the width
               instead of leaving a void beside a single thin list. */}
           <div className="lg:col-span-8">
             <h3 className="caps mb-5 text-label text-ink">Shop</h3>

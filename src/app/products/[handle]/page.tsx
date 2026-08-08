@@ -118,7 +118,7 @@ export default async function ProductPage({
 
             <PurchasePanel product={product} />
 
-            {/* Legacy Shopify description HTML — scoped so imported markup
+            {/* Legacy Shopify description HTML, scoped so imported markup
                 (oversized images, raw tables) cannot break the layout. */}
             {product.descriptionHtml && (
               <div className="mt-10 border-t border-line pt-8">
