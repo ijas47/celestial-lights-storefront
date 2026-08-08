@@ -1,69 +1,96 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { getCategoryProducts, getProduct } from '@/lib/shopify';
+import { HERO_CANDIDATES, HOMEPAGE_BLOCKS } from '@/lib/homepage';
+import { Hero } from '@/components/home/hero';
+import { CollectionBlocks } from '@/components/home/collection-blocks';
+import { CategoryTiles } from '@/components/home/category-tiles';
+import { FeaturedRow } from '@/components/home/featured-row';
 
-export default function Home() {
+export const revalidate = 3600;
+
+export default async function Home() {
+  const [chandeliers, wallLights, pendants, heroCandidates] = await Promise.all([
+    getCategoryProducts('chandeliers', { first: 8, sort: 'featured' }),
+    getCategoryProducts('wall-lights', { first: 8, sort: 'featured' }),
+    getCategoryProducts('hanging-pendant', { first: 8, sort: 'featured' }),
+    Promise.all(HERO_CANDIDATES.map((handle) => getProduct(handle))),
+  ]);
+
+  // First curated candidate that resolves with an image wins; never blank.
+  const heroImage =
+    heroCandidates.find((p) => p?.featuredImage)?.featuredImage ??
+    chandeliers.products[0]?.featuredImage ??
+    null;
+
+  const blockImages: Record<string, (typeof pendants)['products'][number] | undefined> = {
+    'hanging-pendant': pendants.products[0],
+    'wall-lights': wallLights.products[0],
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Hero image={heroImage} href="/collections/chandeliers" />
+
+      <CollectionBlocks
+        blocks={HOMEPAGE_BLOCKS.map((block) => ({
+          slug: block.slug,
+          name: block.name,
+          blurb: block.blurb,
+          image: blockImages[block.slug]?.featuredImage ?? null,
+        }))}
+      />
+
+      <FeaturedRow
+        title="Signature Chandeliers"
+        categorySlug="chandeliers"
+        products={chandeliers.products}
+        preloadFirst
+      />
+
+      <FeaturedRow
+        title="Wall Lights"
+        categorySlug="wall-lights"
+        products={wallLights.products}
+      />
+
+      <CategoryTiles />
+
+      {/* Inverted band — the one dark surface in the system */}
+      <section className="bg-band gutter section">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
+          <div>
+            <h3 className="caps text-label text-ink-inverse">Made to last</h3>
+            <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
+              One to two year warranty on every fixture, with in-house repair and
+              spare parts held in stock.
+            </p>
+          </div>
+          <div>
+            <h3 className="caps text-label text-ink-inverse">
+              Delivered nationwide
+            </h3>
+            <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
+              Dispatched in 48 hours, insured against breakage, installed with
+              video guidance.
+            </p>
+          </div>
+          <div>
+            <h3 className="caps text-label text-ink-inverse">
+              Specified with you
+            </h3>
+            <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
+              Free lighting consultation for homes, studios and architectural
+              projects.{' '}
+              <Link
+                href="mailto:support@celestiallights.in"
+                className="text-ink-inverse underline underline-offset-4"
+              >
+                Get in touch
+              </Link>
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
