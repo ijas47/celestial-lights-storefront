@@ -9,7 +9,7 @@ const WB_BRIGHT = 220;
 const WB_RATIO = 0.75;
 const WB_MAX_STD = 18;
 
-const WM_THRESHOLD = 2.5;
+const WM_THRESHOLD = 1.0;
 const WM_CENTER_R = 20;
 const WM_EDGE_BORDER = 10;
 
@@ -140,33 +140,6 @@ function detectWatermark(
   const eStd = Math.sqrt(Math.max(0, eSq / eN - eMean * eMean));
   const bDiff = cMean - eMean;
 
-  let lcSum = 0,
-    lcSq = 0,
-    lcN = 0;
-  for (let y = cy - cr; y <= cy + cr; y++) {
-    for (let x = cx - cr; x <= cx + cr; x++) {
-      if (x < 1 || x >= w - 1 || y < 1 || y >= h - 1) continue;
-      const dx = x - cx;
-      const dy = y - cy;
-      if (dx * dx + dy * dy > cr2) continue;
-
-      const i = y * w + x;
-      const v = grey[i];
-      const lc = Math.max(
-        Math.abs(v - grey[(y - 1) * w + x]),
-        Math.abs(v - grey[(y + 1) * w + x]),
-        Math.abs(v - grey[i - 1]),
-        Math.abs(v - grey[i + 1])
-      );
-      lcSum += lc;
-      lcSq += lc * lc;
-      lcN++;
-    }
-  }
-
-  const lcMean = lcN > 0 ? lcSum / lcN : 0;
-  const lcVar = lcN > 0 ? lcSq / lcN - lcMean * lcMean : 0;
-
   let cLap = 0,
     cLapN = 0;
   let eLap = 0,
@@ -201,10 +174,9 @@ function detectWatermark(
 
   let score = 0;
 
-  if (lcVar < 200) score += 1.5;
   if (eStd > 0 && cStd < eStd * 0.8) score += 1.0;
-  if (bDiff >= 3 && bDiff <= 30) score += 0.5;
-  if (avgELap > 0 && avgCLap > avgELap * 1.5) score += 0.5;
+  if (bDiff >= 3 && bDiff <= 50) score += 0.5;
+  if (avgELap > 0 && avgCLap > avgELap * 1.2) score += 1.0;
 
   return score >= WM_THRESHOLD;
 }
@@ -221,9 +193,13 @@ export async function filterUnwantedImages(
     }))
   );
 
-  const filtered = results
-    .filter((r) => !r.isWhite && !r.isWatermarked)
+  const nonWatermarked = results.filter((r) => !r.isWatermarked);
+
+  const filtered = nonWatermarked
+    .filter((r) => !r.isWhite)
     .map((r) => r.image);
 
-  return filtered.length > 0 ? filtered : images;
+  if (filtered.length > 0) return filtered;
+  if (nonWatermarked.length > 0) return nonWatermarked.map((r) => r.image);
+  return [];
 }
