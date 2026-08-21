@@ -174,7 +174,7 @@ export async function GET(request: Request) {
   let currentBatch = 1;
 
   while (currentBatch < batch) {
-    const skip = await shopifyFetch<BatchResponse>({
+    const skip: BatchResponse = await shopifyFetch<BatchResponse>({
       query: `query P($first: Int!, $after: String) { products(first: $first, after: $after) { edges { node { handle } } pageInfo { hasNextPage endCursor } } }`,
       variables: { first: batchSize, after: cursor },
       revalidate: 0,
