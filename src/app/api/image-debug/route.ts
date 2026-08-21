@@ -12,34 +12,7 @@ const WB_BRIGHT = 220;
 const WM_CENTER_R = 20;
 const WM_EDGE_BORDER = 10;
 
-type ImageAnalysis = {
-  url: string;
-  altText: string | null;
-  thumbnail: string;
-  whiteBg: {
-    borderLightRatio: number;
-    borderBrightnessMean: number;
-    borderBrightnessStd: number;
-    isWhite: boolean;
-  };
-  watermark: {
-    centerMean: number;
-    centerStd: number;
-    edgeMean: number;
-    edgeStd: number;
-    brightnessDiff: number;
-    centerLaplacian: number;
-    edgeLaplacian: number;
-    stdScore: number;
-    diffScore: number;
-    lapScore: number;
-    totalScore: number;
-    isWatermarked: boolean;
-  };
-  currentVerdict: 'kept' | 'removed-white' | 'removed-watermark';
-};
-
-async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysis, 'url' | 'altText' | 'currentVerdict'> | null> {
+async function analyzeImageDetailed(imageUrl: string) {
   try {
     const url = imageUrl.includes('?')
       ? `${imageUrl}&width=200`
@@ -51,8 +24,8 @@ async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysi
     const buf = Buffer.from(await res.arrayBuffer());
 
     const thumbBuf = await sharp(buf)
-      .resize(80, 80, { fit: 'cover' })
-      .jpeg({ quality: 60 })
+      .resize(60, 60, { fit: 'cover' })
+      .jpeg({ quality: 50 })
       .toBuffer();
     const thumbnail = `data:image/jpeg;base64,${thumbBuf.toString('base64')}`;
 
@@ -77,22 +50,13 @@ async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysi
 
     for (let y = 0; y < h; y++) {
       for (let x = 0; x < w; x++) {
-        if (
-          x >= WB_BORDER && x < w - WB_BORDER &&
-          y >= WB_BORDER && y < h - WB_BORDER
-        ) continue;
-
+        if (x >= WB_BORDER && x < w - WB_BORDER && y >= WB_BORDER && y < h - WB_BORDER) continue;
         const idx = (y * w + x) * ch;
-        const r = data[idx];
-        const g = data[idx + 1];
-        const b = data[idx + 2];
-        const brightness = (r + g + b) / 3;
-
+        const brightness = (data[idx] + data[idx + 1] + data[idx + 2]) / 3;
         borderCount++;
         bSum += brightness;
         bSqSum += brightness * brightness;
-
-        if (r > WB_BRIGHT && g > WB_BRIGHT && b > WB_BRIGHT) {
+        if (data[idx] > WB_BRIGHT && data[idx + 1] > WB_BRIGHT && data[idx + 2] > WB_BRIGHT) {
           lightCount++;
         }
       }
@@ -100,34 +64,17 @@ async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysi
 
     const borderLightRatio = borderCount > 0 ? lightCount / borderCount : 0;
     const borderMean = borderCount > 0 ? bSum / borderCount : 0;
-    const borderVariance = borderCount > 0 ? bSqSum / borderCount - borderMean * borderMean : 0;
-    const borderStd = Math.sqrt(Math.max(0, borderVariance));
+    const borderStd = Math.sqrt(Math.max(0, borderCount > 0 ? bSqSum / borderCount - borderMean * borderMean : 0));
 
-    const cx = w >> 1;
-    const cy = h >> 1;
-    const cr = WM_CENTER_R;
-    const cr2 = cr * cr;
-    const bd = WM_EDGE_BORDER;
-
-    let cSum = 0, cSq = 0, cN = 0;
-    let eSum = 0, eSq = 0, eN = 0;
+    const cx = w >> 1, cy = h >> 1, cr = WM_CENTER_R, cr2 = cr * cr, bd = WM_EDGE_BORDER;
+    let cSum = 0, cSq = 0, cN = 0, eSum = 0, eSq = 0, eN = 0;
 
     for (let y = 0; y < h; y++) {
       for (let x = 0; x < w; x++) {
         const v = grey[y * w + x];
-        const dx = x - cx;
-        const dy = y - cy;
-
-        if (dx * dx + dy * dy <= cr2) {
-          cSum += v;
-          cSq += v * v;
-          cN++;
-        }
-        if (x < bd || x >= w - bd || y < bd || y >= h - bd) {
-          eSum += v;
-          eSq += v * v;
-          eN++;
-        }
+        const dx = x - cx, dy = y - cy;
+        if (dx * dx + dy * dy <= cr2) { cSum += v; cSq += v * v; cN++; }
+        if (x < bd || x >= w - bd || y < bd || y >= h - bd) { eSum += v; eSq += v * v; eN++; }
       }
     }
 
@@ -137,26 +84,14 @@ async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysi
     const eStd = Math.sqrt(Math.max(0, eN > 0 ? eSq / eN - eMean * eMean : 0));
     const bDiff = cMean - eMean;
 
-    let cLap = 0, cLapN = 0;
-    let eLap = 0, eLapN = 0;
-
+    let cLap = 0, cLapN = 0, eLap = 0, eLapN = 0;
     for (let y = 1; y < h - 1; y++) {
       for (let x = 1; x < w - 1; x++) {
         const i = y * w + x;
-        const lap = Math.abs(
-          4 * grey[i] - grey[(y - 1) * w + x] - grey[(y + 1) * w + x] - grey[i - 1] - grey[i + 1]
-        );
-
-        const dx = x - cx;
-        const dy = y - cy;
-        if (dx * dx + dy * dy <= cr2) {
-          cLap += lap;
-          cLapN++;
-        }
-        if (y < bd || y >= h - bd) {
-          eLap += lap;
-          eLapN++;
-        }
+        const lap = Math.abs(4 * grey[i] - grey[(y - 1) * w + x] - grey[(y + 1) * w + x] - grey[i - 1] - grey[i + 1]);
+        const dx = x - cx, dy = y - cy;
+        if (dx * dx + dy * dy <= cr2) { cLap += lap; cLapN++; }
+        if (y < bd || y >= h - bd) { eLap += lap; eLapN++; }
       }
     }
 
@@ -168,27 +103,24 @@ async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysi
     const lapScore = (avgELap > 0 && avgCLap > avgELap * 1.2) ? 1.0 : 0;
     const totalScore = stdScore + diffScore + lapScore;
 
+    const isWhite = borderLightRatio > 0.75 && borderStd < 18;
+    const isWatermarked = totalScore >= 1.0;
+
+    let verdict: string = 'kept';
+    if (isWatermarked) verdict = 'removed-watermark';
+    else if (isWhite) verdict = 'removed-white';
+
     return {
       thumbnail,
-      whiteBg: {
-        borderLightRatio: Math.round(borderLightRatio * 1000) / 1000,
-        borderBrightnessMean: Math.round(borderMean * 10) / 10,
-        borderBrightnessStd: Math.round(borderStd * 10) / 10,
-        isWhite: borderLightRatio > 0.75 && borderStd < 18,
-      },
-      watermark: {
-        centerMean: Math.round(cMean * 10) / 10,
-        centerStd: Math.round(cStd * 10) / 10,
-        edgeMean: Math.round(eMean * 10) / 10,
-        edgeStd: Math.round(eStd * 10) / 10,
-        brightnessDiff: Math.round(bDiff * 10) / 10,
-        centerLaplacian: Math.round(avgCLap * 10) / 10,
-        edgeLaplacian: Math.round(avgELap * 10) / 10,
-        stdScore,
-        diffScore,
-        lapScore,
-        totalScore,
-        isWatermarked: totalScore >= 1.0,
+      verdict,
+      wb: { ratio: +(borderLightRatio.toFixed(3)), mean: +(borderMean.toFixed(1)), std: +(borderStd.toFixed(1)), isWhite },
+      wm: {
+        cMean: +(cMean.toFixed(1)), cStd: +(cStd.toFixed(1)),
+        eMean: +(eMean.toFixed(1)), eStd: +(eStd.toFixed(1)),
+        bDiff: +(bDiff.toFixed(1)),
+        cLap: +(avgCLap.toFixed(1)), eLap: +(avgELap.toFixed(1)),
+        scores: { std: stdScore, diff: diffScore, lap: lapScore, total: totalScore },
+        isWatermarked,
       },
     };
   } catch {
@@ -196,139 +128,92 @@ async function analyzeImageDetailed(imageUrl: string): Promise<Omit<ImageAnalysi
   }
 }
 
-type ProductsResponse = {
-  products: {
-    edges: {
-      node: {
-        handle: string;
-        title: string;
-        images: { edges: { node: ShopImage }[] };
-      };
-    }[];
-    pageInfo: { hasNextPage: boolean; endCursor: string | null };
-  };
-};
-
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const page = parseInt(searchParams.get('page') ?? '1');
-  const perPage = parseInt(searchParams.get('perPage') ?? '5');
-  const filterType = searchParams.get('filter') ?? 'all';
+  const handle = searchParams.get('handle');
+  const batch = parseInt(searchParams.get('batch') ?? '1');
+  const batchSize = 10;
 
-  const allProducts: {
-    handle: string;
-    title: string;
-    images: ShopImage[];
-  }[] = [];
-
-  let cursor: string | null = null;
-  let hasNext = true;
-
-  while (hasNext) {
-    const data: ProductsResponse = await shopifyFetch<ProductsResponse>({
-      query: `
-        query AllProducts($first: Int!, $after: String) {
-          products(first: $first, after: $after) {
-            edges {
-              node {
-                handle
-                title
-                images(first: 20) {
-                  edges {
-                    node {
-                      url
-                      altText
-                      width
-                      height
-                    }
-                  }
-                }
-              }
-            }
-            pageInfo {
-              hasNextPage
-              endCursor
-            }
-          }
-        }
-      `,
-      variables: { first: 50, after: cursor },
+  if (handle) {
+    const data = await shopifyFetch<{
+      product: { handle: string; title: string; images: { edges: { node: ShopImage }[] } } | null;
+    }>({
+      query: `query P($h: String!) { product(handle: $h) { handle title images(first: 20) { edges { node { url altText width height } } } } }`,
+      variables: { h: handle },
       revalidate: 0,
     });
 
-    for (const edge of data.products.edges) {
-      const images = edge.node.images.edges.map((e: { node: ShopImage }) => e.node);
-      allProducts.push({
-        handle: edge.node.handle,
-        title: edge.node.title,
-        images,
-      });
-    }
+    if (!data.product) return NextResponse.json({ error: 'not found' }, { status: 404 });
 
-    hasNext = data.products.pageInfo.hasNextPage;
-    cursor = data.products.pageInfo.endCursor;
-  }
+    const images = await Promise.all(
+      data.product.images.edges.map(async (e: { node: ShopImage }) => {
+        const analysis = await analyzeImageDetailed(e.node.url);
+        return { url: e.node.url, altText: e.node.altText, ...analysis };
+      })
+    );
 
-  const productAnalyses: {
-    handle: string;
-    title: string;
-    totalImages: number;
-    keptCount: number;
-    removedCount: number;
-    images: ImageAnalysis[];
-  }[] = [];
-
-  for (const product of allProducts) {
-    if (product.images.length === 0) continue;
-
-    const imageResults: ImageAnalysis[] = [];
-
-    for (const img of product.images) {
-      const analysis = await analyzeImageDetailed(img.url);
-      if (!analysis) continue;
-
-      let verdict: ImageAnalysis['currentVerdict'] = 'kept';
-      if (analysis.watermark.isWatermarked) {
-        verdict = 'removed-watermark';
-      } else if (analysis.whiteBg.isWhite) {
-        verdict = 'removed-white';
-      }
-
-      imageResults.push({
-        url: img.url,
-        altText: img.altText,
-        ...analysis,
-        currentVerdict: verdict,
-      });
-    }
-
-    const keptCount = imageResults.filter(r => r.currentVerdict === 'kept').length;
-    const removedCount = imageResults.filter(r => r.currentVerdict !== 'kept').length;
-
-    if (filterType === 'affected' && removedCount === 0) continue;
-    if (filterType === 'all-removed' && keptCount > 0) continue;
-    if (filterType === 'false-positives' && removedCount === 0) continue;
-
-    productAnalyses.push({
-      handle: product.handle,
-      title: product.title,
-      totalImages: product.images.length,
-      keptCount,
-      removedCount,
-      images: imageResults,
+    return NextResponse.json({
+      handle: data.product.handle,
+      title: data.product.title,
+      totalImages: images.length,
+      kept: images.filter(i => i.verdict === 'kept').length,
+      removedWm: images.filter(i => i.verdict === 'removed-watermark').length,
+      removedWb: images.filter(i => i.verdict === 'removed-white').length,
+      images,
     });
   }
 
-  const startIdx = (page - 1) * perPage;
-  const pageItems = productAnalyses.slice(startIdx, startIdx + perPage);
-  const totalPages = Math.ceil(productAnalyses.length / perPage);
+  type BatchResponse = {
+    products: {
+      edges: { node: { handle: string; title: string; images: { edges: { node: ShopImage }[] } } }[];
+      pageInfo: { hasNextPage: boolean; endCursor: string | null };
+    };
+  };
+
+  let cursor: string | null = null;
+  let currentBatch = 1;
+
+  while (currentBatch < batch) {
+    const skip = await shopifyFetch<BatchResponse>({
+      query: `query P($first: Int!, $after: String) { products(first: $first, after: $after) { edges { node { handle } } pageInfo { hasNextPage endCursor } } }`,
+      variables: { first: batchSize, after: cursor },
+      revalidate: 0,
+    });
+    cursor = skip.products.pageInfo.endCursor;
+    if (!skip.products.pageInfo.hasNextPage) break;
+    currentBatch++;
+  }
+
+  const data = await shopifyFetch<BatchResponse>({
+    query: `query P($first: Int!, $after: String) { products(first: $first, after: $after) { edges { node { handle title images(first: 20) { edges { node { url altText width height } } } } } pageInfo { hasNextPage endCursor } } }`,
+    variables: { first: batchSize, after: cursor },
+    revalidate: 0,
+  });
+
+  const results = await Promise.all(
+    data.products.edges.map(async (edge) => {
+      const images = await Promise.all(
+        edge.node.images.edges.map(async (e: { node: ShopImage }) => {
+          const analysis = await analyzeImageDetailed(e.node.url);
+          return { url: e.node.url, altText: e.node.altText, ...analysis };
+        })
+      );
+      return {
+        handle: edge.node.handle,
+        title: edge.node.title,
+        totalImages: images.length,
+        kept: images.filter(i => i.verdict === 'kept').length,
+        removedWm: images.filter(i => i.verdict === 'removed-watermark').length,
+        removedWb: images.filter(i => i.verdict === 'removed-white').length,
+        images,
+      };
+    })
+  );
 
   return NextResponse.json({
-    page,
-    perPage,
-    totalPages,
-    totalProducts: productAnalyses.length,
-    filter: filterType,
-    products: pageItems,
+    batch,
+    batchSize,
+    hasMore: data.products.pageInfo.hasNextPage,
+    products: results,
   });
 }
