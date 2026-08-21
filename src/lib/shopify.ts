@@ -529,7 +529,7 @@ export async function getProduct(handle: string): Promise<FullProduct | null> {
     images.some((img) => img.url === product.featuredImage!.url);
   const featuredImage = featuredImageKept
     ? product.featuredImage
-    : images[0] ?? product.featuredImage;
+    : images[0] ?? null;
 
   return {
     ...data.product,
