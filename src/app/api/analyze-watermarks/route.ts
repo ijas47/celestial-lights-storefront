@@ -153,11 +153,7 @@ async function analyzeImageFromUrl(imageUrl: string, label: string): Promise<Ana
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const handle = searchParams.get('handle');
-
-  if (!handle) {
-    return NextResponse.json({ error: 'Missing ?handle= parameter' }, { status: 400 });
-  }
+  const handle = searchParams.get('handle') ?? 'all';
 
   // Define image sets for known products
   const imageSets: Record<string, { label: string; url: string }[]> = {
@@ -183,36 +179,43 @@ export async function GET(request: Request) {
     ],
   };
 
-  const images = imageSets[handle];
-  if (!images) {
-    return NextResponse.json({ error: `Unknown product handle: ${handle}. Use: ${Object.keys(imageSets).join(', ')}` }, { status: 400 });
-  }
+  // Support "all" to analyze every product in one request
+  const handles = handle === 'all' ? Object.keys(imageSets) : [handle];
+  const allProductResults: Record<string, unknown> = {};
 
-  const results: (AnalysisResult | { label: string; error: string })[] = [];
-
-  for (const { label, url } of images) {
-    try {
-      const result = await analyzeImageFromUrl(url, label);
-      results.push(result);
-    } catch (err) {
-      results.push({ label, error: (err as Error).message });
+  for (const h of handles) {
+    const images = imageSets[h];
+    if (!images) {
+      allProductResults[h] = { error: `Unknown handle` };
+      continue;
     }
+
+    const results: (AnalysisResult | { label: string; error: string })[] = [];
+    for (const { label, url } of images) {
+      try {
+        const result = await analyzeImageFromUrl(url, label);
+        results.push(result);
+      } catch (err) {
+        results.push({ label, error: (err as Error).message });
+      }
+    }
+
+    const successResults = results.filter((r): r is AnalysisResult => 'hasWatermark' in r);
+    const watermarked = successResults.filter(r => r.hasWatermark);
+    const clean = successResults.filter(r => !r.hasWatermark);
+
+    allProductResults[h] = {
+      totalImages: images.length,
+      analyzed: successResults.length,
+      watermarkedCount: watermarked.length,
+      cleanCount: clean.length,
+      results,
+      summary: {
+        watermarkedLabels: watermarked.map(r => r.label),
+        cleanLabels: clean.map(r => r.label),
+      },
+    };
   }
 
-  const successResults = results.filter((r): r is AnalysisResult => 'hasWatermark' in r);
-  const watermarked = successResults.filter(r => r.hasWatermark);
-  const clean = successResults.filter(r => !r.hasWatermark);
-
-  return NextResponse.json({
-    product: handle,
-    totalImages: images.length,
-    analyzed: successResults.length,
-    watermarkedCount: watermarked.length,
-    cleanCount: clean.length,
-    results,
-    summary: {
-      watermarkedLabels: watermarked.map(r => r.label),
-      cleanLabels: clean.map(r => r.label),
-    },
-  });
+  return NextResponse.json({ handles, products: allProductResults });
 }
