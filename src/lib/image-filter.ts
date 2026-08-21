@@ -221,9 +221,13 @@ export async function filterUnwantedImages(
     }))
   );
 
-  const filtered = results
-    .filter((r) => !r.isWhite && !r.isWatermarked)
+  const nonWatermarked = results.filter((r) => !r.isWatermarked);
+
+  const filtered = nonWatermarked
+    .filter((r) => !r.isWhite)
     .map((r) => r.image);
 
-  return filtered.length > 0 ? filtered : images;
+  if (filtered.length > 0) return filtered;
+  if (nonWatermarked.length > 0) return nonWatermarked.map((r) => r.image);
+  return [];
 }
