@@ -9,7 +9,7 @@ import type {
   CartLine,
 } from './types';
 import { getCategory } from './categories';
-import { filterWhiteBackgroundImages } from './image-filter';
+import { filterUnwantedImages } from './image-filter';
 
 const HAROLD_RE = /harold\s*light(?:ing|s)?/i;
 
@@ -521,7 +521,7 @@ export async function getProduct(handle: string): Promise<FullProduct | null> {
   if (!data.product) return null;
 
   const allImages = flattenImages(data.product.images.edges);
-  const images = await filterWhiteBackgroundImages(allImages);
+  const images = await filterUnwantedImages(allImages);
 
   const product = data.product;
   const featuredImageKept =
