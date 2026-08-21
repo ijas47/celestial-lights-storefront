@@ -26,6 +26,15 @@ function stripHaroldFromImage(img: ShopImage): ShopImage {
   return { ...img, altText: stripHarold(img.altText) };
 }
 
+function sanitizeDescriptionHtml(html: string): string {
+  let cleaned = html
+    .replace(/<img[^>]*>/gi, '')
+    .replace(new RegExp(HAROLD_RE.source, 'gi'), 'Celestial Lights');
+  cleaned = cleaned.replace(/<p>\s*<\/p>/gi, '');
+  cleaned = cleaned.replace(/<div>\s*<\/div>/gi, '');
+  return cleaned;
+}
+
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const token = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN;
 
@@ -529,7 +538,7 @@ export async function getProduct(handle: string): Promise<FullProduct | null> {
     variants: flattenVariants(data.product.variants.edges),
     vendor: stripHarold(product.vendor),
     tags: product.tags.filter((t) => !containsHarold(t)),
-    descriptionHtml: stripHarold(product.descriptionHtml),
+    descriptionHtml: sanitizeDescriptionHtml(product.descriptionHtml),
   };
 }
 
