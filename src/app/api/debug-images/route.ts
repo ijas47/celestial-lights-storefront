@@ -121,10 +121,9 @@ export async function GET(request: Request) {
 
       let score = 0;
       const signals: string[] = [];
-      if (lcVar < 200) { score += 1.5; signals.push(`lcVar=${lcVar.toFixed(1)}<200 (+1.5)`); }
       if (eStd > 0 && cStd < eStd * 0.8) { score += 1.0; signals.push(`cStd=${cStd.toFixed(1)}<eStd*0.8=${(eStd*0.8).toFixed(1)} (+1.0)`); }
-      if (bDiff >= 3 && bDiff <= 30) { score += 0.5; signals.push(`bDiff=${bDiff.toFixed(1)} in [3,30] (+0.5)`); }
-      if (avgELap > 0 && avgCLap > avgELap * 1.5) { score += 0.5; signals.push(`cLap=${avgCLap.toFixed(1)}>eLap*1.5=${(avgELap*1.5).toFixed(1)} (+0.5)`); }
+      if (bDiff >= 3 && bDiff <= 50) { score += 0.5; signals.push(`bDiff=${bDiff.toFixed(1)} in [3,50] (+0.5)`); }
+      if (avgELap > 0 && avgCLap > avgELap * 1.2) { score += 1.0; signals.push(`cLap=${avgCLap.toFixed(1)}>eLap*1.2=${(avgELap*1.2).toFixed(1)} (+1.0)`); }
 
       const wbMean = wbCount > 0 ? wbSum / wbCount : 0;
       const wbVar = wbCount > 0 ? wbSqSum / wbCount - wbMean * wbMean : 0;
@@ -135,7 +134,7 @@ export async function GET(request: Request) {
       results.push({
         url: img.url.split('/').pop()?.split('?')[0],
         score,
-        isWatermarked: score >= 2.5,
+        isWatermarked: score >= 1.0,
         isWhite,
         signals,
         raw: { cMean: +cMean.toFixed(1), eMean: +eMean.toFixed(1), cStd: +cStd.toFixed(1), eStd: +eStd.toFixed(1), bDiff: +bDiff.toFixed(1), lcVar: +lcVar.toFixed(1), avgCLap: +avgCLap.toFixed(1), avgELap: +avgELap.toFixed(1), wbRatio: +wbRatio.toFixed(3), wbStd: +wbStd.toFixed(1) },
