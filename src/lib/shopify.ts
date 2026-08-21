@@ -9,6 +9,7 @@ import type {
   CartLine,
 } from './types';
 import { getCategory } from './categories';
+import { filterWhiteBackgroundImages } from './image-filter';
 
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const token = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN;
@@ -495,9 +496,21 @@ export async function getProduct(handle: string): Promise<FullProduct | null> {
 
   if (!data.product) return null;
 
+  const allImages = flattenImages(data.product.images.edges);
+  const images = await filterWhiteBackgroundImages(allImages);
+
+  const product = data.product;
+  const featuredImageKept =
+    product.featuredImage &&
+    images.some((img) => img.url === product.featuredImage!.url);
+  const featuredImage = featuredImageKept
+    ? product.featuredImage
+    : images[0] ?? product.featuredImage;
+
   return {
     ...data.product,
-    images: flattenImages(data.product.images.edges),
+    featuredImage,
+    images,
     variants: flattenVariants(data.product.variants.edges),
   };
 }
