@@ -500,7 +500,7 @@ export async function getCategoryProducts(
   });
 
   return {
-    products: flattenEdges(data.products.edges),
+    products: flattenEdges(data.products.edges).filter((p) => p.featuredImage),
     hasNextPage: data.products.pageInfo.hasNextPage,
     endCursor: data.products.pageInfo.endCursor,
   };
@@ -522,6 +522,8 @@ export async function getProduct(handle: string): Promise<FullProduct | null> {
 
   const allImages = flattenImages(data.product.images.edges);
   const images = await filterUnwantedImages(allImages);
+
+  if (images.length === 0) return null;
 
   const product = data.product;
   const featuredImageKept =
@@ -554,7 +556,7 @@ export async function getRecommendations(
       revalidate: 3600,
     });
 
-    return data.productRecommendations ?? [];
+    return (data.productRecommendations ?? []).filter((p) => p.featuredImage);
   } catch {
     return [];
   }
@@ -583,8 +585,9 @@ export async function searchProducts(
     revalidate: 300,
   });
 
+  const filtered = flattenEdges(data.search.edges).filter((p) => p.featuredImage);
   return {
-    products: flattenEdges(data.search.edges),
+    products: filtered,
     hasNextPage: data.search.pageInfo.hasNextPage,
     endCursor: data.search.pageInfo.endCursor,
     totalCount: data.search.totalCount,
@@ -602,7 +605,7 @@ export async function predictiveSearch(
     revalidate: 300,
   });
 
-  return data.predictiveSearch.products;
+  return data.predictiveSearch.products.filter((p) => p.featuredImage);
 }
 
 type AllHandlesResponse = {
