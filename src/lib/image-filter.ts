@@ -3,11 +3,12 @@ import sharp from 'sharp';
 import type { ShopImage } from './types';
 
 const ANALYSIS_SIZE = 50;
-const BORDER_DEPTH = 5;
-const WHITE_THRESHOLD = 240;
-const WHITE_RATIO_CUTOFF = 0.85;
+const BORDER_DEPTH = 8;
+const LIGHT_THRESHOLD = 220;
+const LIGHT_RATIO_CUTOFF = 0.75;
+const MAX_STD_DEV = 18;
 
-async function isWhiteBackground(imageUrl: string): Promise<boolean> {
+async function isStudioBackground(imageUrl: string): Promise<boolean> {
   try {
     const smallUrl = imageUrl.includes('?')
       ? `${imageUrl}&width=100`
@@ -24,8 +25,10 @@ async function isWhiteBackground(imageUrl: string): Promise<boolean> {
 
     const { width, height, channels } = info;
 
-    let whiteCount = 0;
+    let lightCount = 0;
     let borderCount = 0;
+    let brightnessSum = 0;
+    let brightnessSqSum = 0;
 
     for (let y = 0; y < height; y++) {
       for (let x = 0; x < width; x++) {
@@ -40,15 +43,26 @@ async function isWhiteBackground(imageUrl: string): Promise<boolean> {
         const r = data[idx];
         const g = data[idx + 1];
         const b = data[idx + 2];
+        const brightness = (r + g + b) / 3;
 
         borderCount++;
-        if (r > WHITE_THRESHOLD && g > WHITE_THRESHOLD && b > WHITE_THRESHOLD) {
-          whiteCount++;
+        brightnessSum += brightness;
+        brightnessSqSum += brightness * brightness;
+
+        if (r > LIGHT_THRESHOLD && g > LIGHT_THRESHOLD && b > LIGHT_THRESHOLD) {
+          lightCount++;
         }
       }
     }
 
-    return borderCount > 0 && whiteCount / borderCount > WHITE_RATIO_CUTOFF;
+    if (borderCount === 0) return false;
+
+    const lightRatio = lightCount / borderCount;
+    const mean = brightnessSum / borderCount;
+    const variance = brightnessSqSum / borderCount - mean * mean;
+    const stdDev = Math.sqrt(Math.max(0, variance));
+
+    return lightRatio > LIGHT_RATIO_CUTOFF && stdDev < MAX_STD_DEV;
   } catch {
     return false;
   }
@@ -62,7 +76,7 @@ export async function filterWhiteBackgroundImages(
   const results = await Promise.all(
     images.map(async (img) => ({
       image: img,
-      isWhite: await isWhiteBackground(img.url),
+      isWhite: await isStudioBackground(img.url),
     }))
   );
 

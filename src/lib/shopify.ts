@@ -11,6 +11,21 @@ import type {
 import { getCategory } from './categories';
 import { filterWhiteBackgroundImages } from './image-filter';
 
+const HAROLD_RE = /harold\s*light(?:ing|s)?/i;
+
+function containsHarold(text: string): boolean {
+  return HAROLD_RE.test(text);
+}
+
+function stripHarold(text: string): string {
+  return text.replace(new RegExp(HAROLD_RE.source, 'gi'), 'Celestial Lights');
+}
+
+function stripHaroldFromImage(img: ShopImage): ShopImage {
+  if (!img.altText || !containsHarold(img.altText)) return img;
+  return { ...img, altText: stripHarold(img.altText) };
+}
+
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const token = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN;
 
@@ -510,8 +525,11 @@ export async function getProduct(handle: string): Promise<FullProduct | null> {
   return {
     ...data.product,
     featuredImage,
-    images,
+    images: images.map(stripHaroldFromImage),
     variants: flattenVariants(data.product.variants.edges),
+    vendor: stripHarold(product.vendor),
+    tags: product.tags.filter((t) => !containsHarold(t)),
+    descriptionHtml: stripHarold(product.descriptionHtml),
   };
 }
 
