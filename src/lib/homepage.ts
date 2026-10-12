@@ -1,12 +1,11 @@
 /**
  * Homepage art direction.
  *
- * The hero is a lifestyle frame, object-cover, with no text on the photo.
- * A white cutout is the wrong hero. No frame from this range was publishable:
- * the overlay sits on the glass, and cleaning the letters would invent detail.
- * The right panel stays an empty well until a clean frame exists.
+ * The hero and the editorial blocks use a lifestyle frame, object-cover,
+ * with no text set over the photo. The frame is chosen in the homepage
+ * from the first fitting in that range that has a room shot. A white
+ * cutout is the wrong hero.
  */
-export const HERO_IMAGE = null;
 
 export const HOMEPAGE_BLOCKS = [
   {

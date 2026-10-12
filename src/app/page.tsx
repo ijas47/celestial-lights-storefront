@@ -1,10 +1,16 @@
 import { getByCategory } from '@/lib/catalogue';
-import { HERO_IMAGE, HOMEPAGE_BLOCKS } from '@/lib/homepage';
+import { HOMEPAGE_BLOCKS } from '@/lib/homepage';
 import { enquiryUrl, EMAIL } from '@/lib/enquiry';
 import { Hero } from '@/components/home/hero';
 import { CollectionBlocks } from '@/components/home/collection-blocks';
 import { CategoryTiles } from '@/components/home/category-tiles';
 import { FeaturedRow } from '@/components/home/featured-row';
+import type { CatalogueImage, Product } from '@/lib/types';
+
+function roomImage(products: Product[]): CatalogueImage | null {
+  const product = products.find((item) => item.images.length > 1);
+  return product?.images[1] ?? null;
+}
 
 export default function Home() {
   const chandeliers = getByCategory('chandeliers');
@@ -12,14 +18,14 @@ export default function Home() {
 
   return (
     <>
-      <Hero image={HERO_IMAGE} href="/collections/chandeliers" />
+      <Hero image={roomImage(chandeliers)} href="/collections/chandeliers" />
 
       <CollectionBlocks
         blocks={HOMEPAGE_BLOCKS.map((block) => ({
           slug: block.slug,
           name: block.name,
           blurb: block.blurb,
-          image: null,
+          image: roomImage(getByCategory(block.slug)),
         }))}
       />
 
