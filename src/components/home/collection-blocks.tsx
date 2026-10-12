@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import type { ShopImage } from '@/lib/types';
+import type { CatalogueImage } from '@/lib/types';
 
 export interface CollectionBlock {
   slug: string;
   name: string;
   blurb: string;
-  image: ShopImage | null;
+  image: CatalogueImage | null;
 }
 
 interface CollectionBlocksProps {
@@ -14,9 +14,8 @@ interface CollectionBlocksProps {
 }
 
 /**
- * Two-up editorial blocks. The signature layout gesture of this system.
- * Editorial image treatment (object-cover, no blend); alternating well tones
- * keep the pair from reading as one flat band.
+ * Two-up editorial blocks. Lifestyle crops use object-cover.
+ * A missing image stays the well, not a white cutout.
  */
 export function CollectionBlocks({ blocks }: CollectionBlocksProps) {
   return (
@@ -31,8 +30,8 @@ export function CollectionBlocks({ blocks }: CollectionBlocksProps) {
             >
               {block.image && (
                 <Image
-                  src={block.image.url}
-                  alt={block.image.altText || block.name}
+                  src={block.image.src}
+                  alt={block.image.alt || block.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -49,7 +48,7 @@ export function CollectionBlocks({ blocks }: CollectionBlocksProps) {
               href={`/collections/${block.slug}`}
               className="rule-link mt-4 text-ink"
             >
-              Shop {block.name}
+              See {block.name}
             </Link>
           </div>
         </article>

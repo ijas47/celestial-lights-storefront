@@ -1,68 +1,24 @@
-'use client';
+import type { Spec } from '@/lib/types';
 
-import type { ProductOption, ProductVariant } from '@/lib/types';
-
-interface VariantPickerProps {
-  options: ProductOption[];
-  variants: ProductVariant[];
-  selected: Record<string, string>;
-  onSelect: (optionName: string, value: string) => void;
+interface SpecListProps {
+  specs: Spec[];
 }
 
-export function VariantPicker({
-  options,
-  variants,
-  selected,
-  onSelect,
-}: VariantPickerProps) {
-  const isOptionAvailable = (optionName: string, value: string) => {
-    const selectedCopy = { ...selected };
-    selectedCopy[optionName] = value;
-
-    return variants.some((v) =>
-      v.availableForSale &&
-      v.selectedOptions.every(
-        (opt) => selectedCopy[opt.name] === opt.value
-      )
-    );
-  };
+export function SpecList({ specs }: SpecListProps) {
+  const rows = specs.filter((spec) => spec.label !== 'Model');
+  if (rows.length === 0) return null;
 
   return (
-    <div className="space-y-5">
-      {options.map((option) => (
-        <div key={option.name}>
-          <label className="caps text-label-sm mb-2 block text-ink-mid">
-            {option.name}
-          </label>
-          <div className="flex flex-wrap gap-2">
-            {option.optionValues.map((optionValue) => {
-              const isSelected = selected[option.name] === optionValue.name;
-              const isAvailable = isOptionAvailable(
-                option.name,
-                optionValue.name
-              );
-
-              return (
-                <button
-                  key={optionValue.name}
-                  onClick={() =>
-                    onSelect(option.name, optionValue.name)
-                  }
-                  className={`caps-tight text-label border px-4 py-2 active:scale-[0.98] transition-transform duration-[120ms] ${
-                    isSelected
-                      ? 'border-ink bg-ink text-ink-inverse'
-                      : 'border-line text-ink hover:border-ink'
-                  } ${!isAvailable ? 'opacity-40 line-through' : ''}`}
-                  aria-pressed={isSelected}
-                  disabled={!isAvailable}
-                >
-                  {optionValue.name}
-                </button>
-              );
-            })}
-          </div>
+    <dl className="border-t border-line">
+      {rows.map((spec) => (
+        <div
+          key={`${spec.label}-${spec.value}`}
+          className="grid grid-cols-[8.5rem_1fr] gap-4 border-b border-line py-3"
+        >
+          <dt className="text-label-sm text-ink-mid">{spec.label}</dt>
+          <dd className="text-body-sm text-ink">{spec.value}</dd>
         </div>
       ))}
-    </div>
+    </dl>
   );
 }

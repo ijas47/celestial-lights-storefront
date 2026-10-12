@@ -1,92 +1,76 @@
-import Link from 'next/link';
-import { getCategoryProducts, getProduct } from '@/lib/shopify';
-import { HERO_CANDIDATES, HOMEPAGE_BLOCKS } from '@/lib/homepage';
+import { getByCategory } from '@/lib/catalogue';
+import { HERO_IMAGE, HOMEPAGE_BLOCKS } from '@/lib/homepage';
+import { enquiryUrl, EMAIL } from '@/lib/enquiry';
 import { Hero } from '@/components/home/hero';
 import { CollectionBlocks } from '@/components/home/collection-blocks';
 import { CategoryTiles } from '@/components/home/category-tiles';
 import { FeaturedRow } from '@/components/home/featured-row';
 
-export const revalidate = 3600;
-
-export default async function Home() {
-  const [chandeliers, wallLights, pendants, heroCandidates] = await Promise.all([
-    getCategoryProducts('chandeliers', { first: 8, sort: 'featured' }),
-    getCategoryProducts('wall-lights', { first: 8, sort: 'featured' }),
-    getCategoryProducts('hanging-pendant', { first: 8, sort: 'featured' }),
-    Promise.all(HERO_CANDIDATES.map((handle) => getProduct(handle))),
-  ]);
-
-  // First curated candidate that resolves with an image wins; never blank.
-  const heroImage =
-    heroCandidates.find((p) => p?.featuredImage)?.featuredImage ??
-    chandeliers.products[0]?.featuredImage ??
-    null;
-
-  const blockImages: Record<string, (typeof pendants)['products'][number] | undefined> = {
-    'hanging-pendant': pendants.products[0],
-    'wall-lights': wallLights.products[0],
-  };
+export default function Home() {
+  const chandeliers = getByCategory('chandeliers');
+  const wallLights = getByCategory('wall-lights');
 
   return (
     <>
-      <Hero image={heroImage} href="/collections/chandeliers" />
+      <Hero image={HERO_IMAGE} href="/collections/chandeliers" />
 
       <CollectionBlocks
         blocks={HOMEPAGE_BLOCKS.map((block) => ({
           slug: block.slug,
           name: block.name,
           blurb: block.blurb,
-          image: blockImages[block.slug]?.featuredImage ?? null,
+          image: null,
         }))}
       />
 
       <FeaturedRow
         title="Signature Chandeliers"
         categorySlug="chandeliers"
-        products={chandeliers.products}
+        products={chandeliers}
         preloadFirst
       />
 
       <FeaturedRow
         title="Wall Lights"
         categorySlug="wall-lights"
-        products={wallLights.products}
+        products={wallLights}
       />
 
       <CategoryTiles />
 
-      {/* Inverted band, the one dark surface in the system */}
       <section className="bg-band gutter section">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
           <div>
-            <h3 className="caps text-label text-ink-inverse">Made to last</h3>
+            <h3 className="caps text-label text-ink-inverse">The range</h3>
             <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
-              One to two year warranty on every fixture, with in-house repair and
-              spare parts held in stock.
+              Chandeliers, pendants, lamps and wall lights are listed on this site.
             </p>
           </div>
           <div>
-            <h3 className="caps text-label text-ink-inverse">
-              Delivered nationwide
-            </h3>
+            <h3 className="caps text-label text-ink-inverse">Price and finish</h3>
             <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
-              Dispatched in 48 hours, insured against breakage, installed with
-              video guidance.
+              Price, available finishes and lead time are confirmed on WhatsApp.
             </p>
           </div>
           <div>
-            <h3 className="caps text-label text-ink-inverse">
-              Specified with you
-            </h3>
-            <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
-              Free lighting consultation for homes, studios and architectural
-              projects.{' '}
-              <Link
-                href="mailto:support@celestiallights.in"
+            <h3 className="caps text-label text-ink-inverse">Showrooms</h3>
+            <p className="mt-3 max-w-[36ch] text-body-sm text-ink-inverse-mid">
+              Celestial Lights Kannur and Celestial Lights Calicut.{' '}
+              <a
+                href={enquiryUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-ink-inverse underline underline-offset-4"
               >
                 Get in touch
-              </Link>
+              </a>
+              {' · '}
+              <a
+                href={`mailto:${EMAIL}`}
+                className="text-ink-inverse underline underline-offset-4"
+              >
+                {EMAIL}
+              </a>
             </p>
           </div>
         </div>

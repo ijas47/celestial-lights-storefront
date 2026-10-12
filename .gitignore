@@ -40,3 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 design-preview/
+
+# Working copy of the fittings PDF. Never commit.
+/catalogues/
+
+__pycache__/
+*.pyc

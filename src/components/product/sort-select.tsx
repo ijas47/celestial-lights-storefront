@@ -14,11 +14,6 @@ export function SortSelect({ current }: SortSelectProps) {
 
   const handleChange = (value: string) => {
     const params = new URLSearchParams(searchParams);
-
-    // Remove the after cursor when sort changes
-    params.delete('after');
-
-    // Update sort parameter (remove if default 'featured')
     if (value === 'featured') {
       params.delete('sort');
     } else {
@@ -26,9 +21,7 @@ export function SortSelect({ current }: SortSelectProps) {
     }
 
     const queryString = params.toString();
-    const newUrl = queryString ? `${pathname}?${queryString}` : pathname;
-
-    router.push(newUrl);
+    router.push(queryString ? `${pathname}?${queryString}` : pathname);
   };
 
   return (
@@ -44,9 +37,7 @@ export function SortSelect({ current }: SortSelectProps) {
         className="caps-tight text-label cursor-pointer border-0 border-b border-ink bg-transparent px-0 py-1 text-ink transition-colors"
       >
         <option value="featured">Featured</option>
-        <option value="price-asc">Price: Low to High</option>
-        <option value="price-desc">Price: High to Low</option>
-        <option value="newest">Newest</option>
+        <option value="model">Model A to Z</option>
       </select>
     </div>
   );

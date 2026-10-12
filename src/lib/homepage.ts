@@ -1,33 +1,24 @@
 /**
  * Homepage art direction.
  *
- * The hero deliberately does NOT use "whatever Shopify sorts first". The
- * catalog mixes cutout-on-white studio shots with dark lifestyle room shots,
- * and only the latter work full-bleed, a centred cutout gets cropped out of
- * frame by object-cover and the panel reads as empty.
- *
- * List preferred hero products in order. The first one that resolves and has
- * an image wins; if none resolve we fall back to the first chandelier, which
- * is degraded but never blank. Changing the hero is a one-line edit here.
+ * The hero is a lifestyle frame, object-cover, with no text on the photo.
+ * A white cutout is the wrong hero. No frame from this range was publishable:
+ * the overlay sits on the glass, and cleaning the letters would invent detail.
+ * The right panel stays an empty well until a clean frame exists.
  */
-export const HERO_CANDIDATES = [
-  'equator-modernist-dining-chandelier',
-  'crescendo-wave-crystal-dining-chandelier',
-  'golden-eclaire-luxe-chandelier',
-] as const;
+export const HERO_IMAGE = null;
 
-/** Editorial blocks under the hero. Images come from each collection's lead product. */
 export const HOMEPAGE_BLOCKS = [
   {
     slug: 'hanging-pendant',
     name: 'Pendants',
     blurb:
-      'Marble, opal and smoked glass suspended over dining tables and kitchen islands.',
+      'Crystal pendants in chrome, with gold and silver finishes where the page lists them. Price and lead time are confirmed on WhatsApp.',
   },
   {
     slug: 'wall-lights',
     name: 'Wall Lights',
     blurb:
-      'Sconces, mirror lights and reading arms that wash a room in low, warm light.',
+      'Wall sconces in chrome and clear crystal, with other finishes where the page lists them. Price and finish are confirmed on WhatsApp.',
   },
 ] as const;

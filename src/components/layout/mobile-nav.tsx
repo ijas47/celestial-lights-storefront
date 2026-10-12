@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/categories';
+import { enquiryUrl } from '@/lib/enquiry';
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -109,6 +110,14 @@ export function MobileNav() {
                   {cat.shortName || cat.name}
                 </Link>
               ))}
+              <a
+                href={enquiryUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-label text-ink hover:opacity-55 transition-opacity py-4 block border-b border-line"
+              >
+                WhatsApp
+              </a>
             </nav>
           </div>
         </>

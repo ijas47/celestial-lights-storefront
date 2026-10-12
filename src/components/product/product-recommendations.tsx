@@ -1,29 +1,22 @@
-import { getRecommendations } from '@/lib/shopify';
+import { relatedProducts } from '@/lib/catalogue';
+import type { Product } from '@/lib/types';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { ProductCard } from './product-card';
 
 interface ProductRecommendationsProps {
-  productId: string;
+  product: Product;
 }
 
-export async function ProductRecommendations({
-  productId,
-}: ProductRecommendationsProps) {
-  const recommendations = await getRecommendations(productId);
-
-  if (recommendations.length === 0) {
-    return null;
-  }
+export function ProductRecommendations({ product }: ProductRecommendationsProps) {
+  const recommendations = relatedProducts(product, 8);
+  if (recommendations.length === 0) return null;
 
   return (
     <section className="mx-auto max-w-7xl gutter section-tight">
       <SectionHeading title="You may also like" />
       <div className="grid-products">
-        {recommendations.slice(0, 8).map((product) => (
-          <ProductCard
-            key={product.handle}
-            product={product}
-          />
+        {recommendations.map((item) => (
+          <ProductCard key={item.slug} product={item} />
         ))}
       </div>
     </section>

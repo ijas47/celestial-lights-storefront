@@ -2,10 +2,10 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import type { ShopImage } from '@/lib/types';
+import type { CatalogueImage } from '@/lib/types';
 
 interface GalleryProps {
-  images: ShopImage[];
+  images: CatalogueImage[];
   title: string;
 }
 
@@ -13,15 +13,11 @@ export function Gallery({ images, title }: GalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrevious = useCallback(() => {
-    setActiveIndex((prev) =>
-      prev === 0 ? images.length - 1 : prev - 1
-    );
+    setActiveIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   }, [images.length]);
 
   const handleNext = useCallback(() => {
-    setActiveIndex((prev) =>
-      prev === images.length - 1 ? 0 : prev + 1
-    );
+    setActiveIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   }, [images.length]);
 
   useEffect(() => {
@@ -39,7 +35,7 @@ export function Gallery({ images, title }: GalleryProps) {
 
   if (images.length === 0) {
     return (
-      <div className="well relative flex aspect-square items-center justify-center">
+      <div className="well relative flex aspect-square items-center justify-center border border-line">
         <span className="caps text-label-sm text-ink-low">No image</span>
       </div>
     );
@@ -49,7 +45,6 @@ export function Gallery({ images, title }: GalleryProps) {
 
   return (
     <div>
-      {/* Main viewport */}
       <div
         className="well relative aspect-square border border-line"
         tabIndex={0}
@@ -58,8 +53,8 @@ export function Gallery({ images, title }: GalleryProps) {
       >
         <Image
           key={`image-${activeIndex}`}
-          src={activeImage.url}
-          alt={activeImage.altText ?? title}
+          src={activeImage.src}
+          alt={activeImage.alt || title}
           fill
           sizes="(max-width:1024px) 100vw, 50vw"
           preload={activeIndex === 0}
@@ -67,7 +62,6 @@ export function Gallery({ images, title }: GalleryProps) {
         />
       </div>
 
-      {/* Thumbnails */}
       {images.length > 1 && (
         <div className="flex gap-2 overflow-x-auto pt-3">
           {images.map((image, index) => (
@@ -83,8 +77,8 @@ export function Gallery({ images, title }: GalleryProps) {
               aria-current={index === activeIndex}
             >
               <Image
-                src={image.url}
-                alt={image.altText ?? `${title} thumbnail ${index + 1}`}
+                src={image.src}
+                alt={image.alt || `${title} thumbnail ${index + 1}`}
                 fill
                 sizes="64px"
                 className="object-contain"

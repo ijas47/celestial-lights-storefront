@@ -55,7 +55,7 @@ export default function Image() {
             color: '#767676',
           }}
         >
-          Designer lighting, shipped across India
+          Seen in Kannur and Calicut
         </div>
       </div>
     ),

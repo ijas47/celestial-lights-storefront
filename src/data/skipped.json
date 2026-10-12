@@ -1,0 +1,4841 @@
+{
+  "droppedFrames": [
+    {
+      "page": 4,
+      "model": "BKY-L126+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 5,
+      "model": "BKY-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 5,
+      "model": "BKH-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 6,
+      "model": "BKY-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 6,
+      "model": "BKH-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 7,
+      "model": "BKH-L126+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 8,
+      "model": "BKY-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 8,
+      "model": "BKH-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 9,
+      "model": "BKY-L128+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 9,
+      "model": "BKH-L128+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 10,
+      "model": "BKY-L126+6+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 11,
+      "model": "BKY-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 11,
+      "model": "BKH-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 12,
+      "model": "BKY-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 12,
+      "model": "BKY-L1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 13,
+      "model": "BKY-L128+8+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 13,
+      "model": "BKH-L128+8+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 14,
+      "model": "BKY-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 14,
+      "model": "BKH-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 15,
+      "model": "BKY-L1236",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 16,
+      "model": "BKY-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 16,
+      "model": "BKH-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 17,
+      "model": "BKY-L1242",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 17,
+      "model": "BKH-L1242",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 18,
+      "model": "BZK-L1230",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 19,
+      "model": "BZK-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 19,
+      "model": "BZK-L1230",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 20,
+      "model": "BZK-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 21,
+      "model": "BZ-L126",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 22,
+      "model": "BZ-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 22,
+      "model": "BZ-HL128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 23,
+      "model": "BZ-L126+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 24,
+      "model": "BZ-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 24,
+      "model": "BZ-HL1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 25,
+      "model": "BZ-L129+9",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 25,
+      "model": "BZ-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 26,
+      "model": "BZ-L1212+12",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 27,
+      "model": "BZ-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 27,
+      "model": "BZ-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 28,
+      "model": "BZ-L1248",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 29,
+      "model": "BZ-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 29,
+      "model": "BZ-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 30,
+      "model": "BZ-L1252",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 31,
+      "model": "BZ-L1252",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 31,
+      "model": "BZ-L1260",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 32,
+      "model": "BZ-L1264",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 32,
+      "model": "BZ-L1264",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 33,
+      "model": "BZ-L1296",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 34,
+      "model": "BZ-L1215DEERS",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 35,
+      "model": "BZ-L1215PARROTS",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 36,
+      "model": "BZ-L1215DEERS",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 36,
+      "model": "BZ-L1215PARROTS",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 37,
+      "model": "BZR-HL1224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 38,
+      "model": "BZR-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 38,
+      "model": "BZR-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 39,
+      "model": "BZR-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 39,
+      "model": "BZR-L128+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 40,
+      "model": "BZR-L129+9",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 40,
+      "model": "BZR-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 41,
+      "model": "BZR-L1212+12",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 42,
+      "model": "BZR-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 42,
+      "model": "BZR-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 43,
+      "model": "BZR-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 43,
+      "model": "BZR-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 44,
+      "model": "BZBU-L1224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 45,
+      "model": "BZBU-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 46,
+      "model": "BZQH-L1224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 47,
+      "model": "BZQH-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 48,
+      "model": "BZBK-L1224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 49,
+      "model": "BZBK-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 49,
+      "model": "BZBK-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 50,
+      "model": "BZBK-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 51,
+      "model": "BZC-L1212+12",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 52,
+      "model": "BZC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 52,
+      "model": "BZC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 53,
+      "model": "BZC-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 53,
+      "model": "BZC-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 54,
+      "model": "BZC-L1212+12",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 55,
+      "model": "BZC-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 55,
+      "model": "BZC-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 57,
+      "model": "BZY-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 57,
+      "model": "BZY-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 58,
+      "model": "BZY-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 58,
+      "model": "BZY-HL128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 59,
+      "model": "BZY-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 59,
+      "model": "BZY-HL1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 60,
+      "model": "BZY-L129+9",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 60,
+      "model": "BZY-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 61,
+      "model": "BZY-L1212+12",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 62,
+      "model": "BZY-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 62,
+      "model": "BZY-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 63,
+      "model": "BZY-L1248",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 64,
+      "model": "BZY-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 64,
+      "model": "BZY-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 65,
+      "model": "BZQ-L1224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 66,
+      "model": "BZQ-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 66,
+      "model": "BZQ-L1240",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 67,
+      "model": "BZX-L1212",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 68,
+      "model": "BZX-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 68,
+      "model": "BZX-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 69,
+      "model": "BZX-L1218",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 70,
+      "model": "BZX-L1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 70,
+      "model": "BZX-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 71,
+      "model": "BZX-L1236",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 72,
+      "model": "BZX-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 72,
+      "model": "BZX-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 73,
+      "model": "BZXL-L1272",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 74,
+      "model": "BZXL-L1272",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 75,
+      "model": "BR-L12163",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 76,
+      "model": "BR-L125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 76,
+      "model": "BR-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 77,
+      "model": "BR-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 77,
+      "model": "BR-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 78,
+      "model": "BR-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 78,
+      "model": "BR-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 79,
+      "model": "BR-L1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 79,
+      "model": "BR-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 80,
+      "model": "BR-L128+8+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 80,
+      "model": "BR-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 81,
+      "model": "BR-L1210+10+10",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 81,
+      "model": "BR-HL1230",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 82,
+      "model": "BR-H1214+4",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 83,
+      "model": "BR-H1214+4",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 83,
+      "model": "BR-H1216+5",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 84,
+      "model": "BR-L1295",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 85,
+      "model": "BR-L1273",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 85,
+      "model": "BR-L1295",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 86,
+      "model": "BR-L12163",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 87,
+      "model": "BR-L12163",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 88,
+      "model": "BR-HL12129",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 89,
+      "model": "BR-HL12129",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 90,
+      "model": "LUL-L1296",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 91,
+      "model": "LUC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 91,
+      "model": "LUC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 92,
+      "model": "LUC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 92,
+      "model": "LUC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 93,
+      "model": "LUC-HL128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 93,
+      "model": "LUC-HL128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 94,
+      "model": "LUC-HL128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 95,
+      "model": "LUC-L128+8",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 96,
+      "model": "LUC-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 96,
+      "model": "LUC-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 97,
+      "model": "LUC-HL126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 97,
+      "model": "LUC-HL126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 98,
+      "model": "LUB-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 98,
+      "model": "LUB-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 99,
+      "model": "LUC-HL126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 99,
+      "model": "LUC-HL126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 100,
+      "model": "LUC-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 100,
+      "model": "LUC-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 101,
+      "model": "LUC-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 101,
+      "model": "LUC-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 102,
+      "model": "LUC-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 103,
+      "model": "LUB-L1210+10",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 104,
+      "model": "LUB-L1210+10",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 104,
+      "model": "LUB-L1210+10",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 105,
+      "model": "LUC-L128+8+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 105,
+      "model": "LUC-L128+8+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 106,
+      "model": "LUC-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 106,
+      "model": "LUC-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 107,
+      "model": "LUC-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 107,
+      "model": "LUC-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 108,
+      "model": "LUC-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 108,
+      "model": "LUC-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 109,
+      "model": "LUC-HL1236",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 110,
+      "model": "LUC-HL1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 110,
+      "model": "LUC-HL1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 111,
+      "model": "LUC-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 111,
+      "model": "LUC-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 112,
+      "model": "LUC-HL1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 112,
+      "model": "LUC-HL1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 113,
+      "model": "LUL-HL126+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 114,
+      "model": "LUL-HL126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 114,
+      "model": "LUL-HL126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 115,
+      "model": "LUG-L1248",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 116,
+      "model": "LUG-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 116,
+      "model": "LUG-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 117,
+      "model": "LUG-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 117,
+      "model": "LUG-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 118,
+      "model": "LUG-L126+6+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 119,
+      "model": "LUG-L128+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 119,
+      "model": "LUG-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 120,
+      "model": "LUG-L128+8+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 120,
+      "model": "LUG-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 121,
+      "model": "LUG-L1260",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 122,
+      "model": "LUG-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 122,
+      "model": "LUG-L1260",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 123,
+      "model": "LR-L1230",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 124,
+      "model": "LR-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 124,
+      "model": "LR-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 125,
+      "model": "LR-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 125,
+      "model": "LR-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 126,
+      "model": "LR-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 126,
+      "model": "LR-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 127,
+      "model": "LR-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 128,
+      "model": "LR-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 128,
+      "model": "LR-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 129,
+      "model": "LR-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 129,
+      "model": "LR-L126+6+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 130,
+      "model": "LR-L128+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 130,
+      "model": "LR-L1230",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 131,
+      "model": "LR-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 131,
+      "model": "LR-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 132,
+      "model": "LR-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 132,
+      "model": "LR-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 133,
+      "model": "LR-L128+8+8",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 134,
+      "model": "LR-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 134,
+      "model": "LR-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 135,
+      "model": "LR-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 135,
+      "model": "LR-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 136,
+      "model": "LC-L1218",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 137,
+      "model": "LC-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 137,
+      "model": "LC-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 138,
+      "model": "LC-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 139,
+      "model": "LC-L1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 139,
+      "model": "LC-L1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 140,
+      "model": "LC-L1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 141,
+      "model": "LC-L1224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 142,
+      "model": "LC-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 142,
+      "model": "LC-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 143,
+      "model": "LC-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 144,
+      "model": "AD-R1218",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 145,
+      "model": "AD-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 145,
+      "model": "AD-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 146,
+      "model": "AD-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 146,
+      "model": "AD-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 147,
+      "model": "AD-L1216",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 147,
+      "model": "AD-L1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 148,
+      "model": "AD-R1214",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 148,
+      "model": "AD-R1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 149,
+      "model": "AD-L1216+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 149,
+      "model": "AD-L1238",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 150,
+      "model": "SK-HL1212+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 151,
+      "model": "SK-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 151,
+      "model": "SK-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 152,
+      "model": "SK-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 152,
+      "model": "SK-HL1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 153,
+      "model": "SK-HL1214",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 153,
+      "model": "SK-HL1218",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 154,
+      "model": "SK-L1220+10",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 154,
+      "model": "SK-L1240",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 155,
+      "model": "SK-L12119",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 156,
+      "model": "SN-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 156,
+      "model": "SN-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 157,
+      "model": "SN-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 157,
+      "model": "SN-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 158,
+      "model": "SN-L128+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 158,
+      "model": "SN-L1210+10",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 159,
+      "model": "SN-L1212+12",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 160,
+      "model": "CA-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 160,
+      "model": "CA-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 161,
+      "model": "CA-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 161,
+      "model": "CA-L1210+5",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 162,
+      "model": "CA-L1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 162,
+      "model": "CA-L1216+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 163,
+      "model": "BT-L1256",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 164,
+      "model": "BT-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 164,
+      "model": "BT-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 165,
+      "model": "BT-L1210+5",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 165,
+      "model": "BT-H1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 166,
+      "model": "BT-L1256",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 167,
+      "model": "BT-L1244",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 167,
+      "model": "BT-L1256",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 168,
+      "model": "BH-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 168,
+      "model": "BH-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 169,
+      "model": "BG-L1215",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 170,
+      "model": "BD-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 170,
+      "model": "BD-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 171,
+      "model": "BD-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 172,
+      "model": "KW-L1256",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 173,
+      "model": "KW-L1232",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 173,
+      "model": "KW-L1256",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 174,
+      "model": "KY-L1240",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 175,
+      "model": "KY-L1240",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 176,
+      "model": "CH-L1215",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 177,
+      "model": "CH-L125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 177,
+      "model": "CH-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 178,
+      "model": "CH-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 178,
+      "model": "CH-L1215",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 179,
+      "model": "CH-L1230",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 179,
+      "model": "CH-L1260",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 180,
+      "model": "CK-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 180,
+      "model": "CK-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 181,
+      "model": "CK-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 181,
+      "model": "CK-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 182,
+      "model": "6621-HL2224",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 183,
+      "model": "6621-6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 183,
+      "model": "6621-8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 184,
+      "model": "6621-8+4",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 184,
+      "model": "6621-10+5",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 185,
+      "model": "6621-12+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 185,
+      "model": "6621-16+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 186,
+      "model": "6621-HL125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 186,
+      "model": "6621-HL126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 187,
+      "model": "6621-HL128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 187,
+      "model": "6621-HL1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 188,
+      "model": "6621-HL1215",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 188,
+      "model": "6621-HL1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 189,
+      "model": "6621-HL1240",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 190,
+      "model": "6621-HL229",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 190,
+      "model": "6621-HL2216",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 191,
+      "model": "6621-HL2224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 192,
+      "model": "6621-C126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 192,
+      "model": "6621-C128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 193,
+      "model": "FA-L1263",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 194,
+      "model": "FA-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 194,
+      "model": "FA-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 195,
+      "model": "FA-L126+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 195,
+      "model": "FA-L1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 196,
+      "model": "FA-L1216+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 196,
+      "model": "FA-L1227",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 197,
+      "model": "FA-L1236",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 198,
+      "model": "FA-L1271",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 199,
+      "model": "FA-L1271",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 200,
+      "model": "FA-L1266",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 201,
+      "model": "FA-L1266",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 201,
+      "model": "FA-L1263",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 202,
+      "model": "FD-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 202,
+      "model": "FD-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 203,
+      "model": "FD-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 203,
+      "model": "FD-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 204,
+      "model": "6611-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 204,
+      "model": "6611-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 205,
+      "model": "6611-L1210+5",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 205,
+      "model": "6611-L1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 206,
+      "model": "6611-L1216+8",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 206,
+      "model": "6611-L1218+9",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 207,
+      "model": "6611-L1249",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 208,
+      "model": "6611-L2214",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 209,
+      "model": "JA-L128+1",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 209,
+      "model": "JA-L1210+1",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 210,
+      "model": "JA-L1212+1",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 210,
+      "model": "JA-L1224+1",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 211,
+      "model": "JA-L1248+1",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 212,
+      "model": "JE-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 212,
+      "model": "JD-L1212+1",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 213,
+      "model": "JC-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 213,
+      "model": "JC-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 214,
+      "model": "JC-L1210",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 214,
+      "model": "JC-L1216",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 215,
+      "model": "JC-L1220",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 215,
+      "model": "JC-L1224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 216,
+      "model": "6630-L1248",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 217,
+      "model": "PC-L1286",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 218,
+      "model": "KM-L126",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 219,
+      "model": "KM-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 219,
+      "model": "KM-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 220,
+      "model": "KM-L1212",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 221,
+      "model": "KM-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 222,
+      "model": "KN-L125",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 223,
+      "model": "KN-L123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 223,
+      "model": "KN-L125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 224,
+      "model": "KN-L128",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 225,
+      "model": "KN-L126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 225,
+      "model": "KN-L128",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 226,
+      "model": "KN-L1212",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 227,
+      "model": "KN-L1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 228,
+      "model": "BKY-D150",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 229,
+      "model": "BKY-D150",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 229,
+      "model": "BKY-D250",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 230,
+      "model": "BKY-C400",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 231,
+      "model": "BKY-C320",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 231,
+      "model": "BKY-C400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 232,
+      "model": "BZ-L111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 233,
+      "model": "BZ-L111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 233,
+      "model": "BZ-L111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 234,
+      "model": "BL-490Y",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 235,
+      "model": "BL-490Y",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 235,
+      "model": "BL-680Y",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 236,
+      "model": "BL-680Y",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 237,
+      "model": "BL-680Y",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 237,
+      "model": "BL-860Y",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 238,
+      "model": "BL-840R",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 238,
+      "model": "BL-1050Y",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 239,
+      "model": "BL-1090",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 240,
+      "model": "BL-1090",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 240,
+      "model": "BL-1710",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 241,
+      "model": "LC-L121",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 242,
+      "model": "LC-L121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 242,
+      "model": "LC-L121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 243,
+      "model": "22002-L121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 243,
+      "model": "22002-L121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 244,
+      "model": "22002-L121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 244,
+      "model": "22002-L121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 245,
+      "model": "LUC-C400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 245,
+      "model": "LUC-C400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 246,
+      "model": "LQ-D1040",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 247,
+      "model": "LQ-D560",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 247,
+      "model": "LQ-D690",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 248,
+      "model": "LQ-D840",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 248,
+      "model": "LQ-D900",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 249,
+      "model": "LQ-D1040",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 250,
+      "model": "GD-D1000",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 251,
+      "model": "GD-C560",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 251,
+      "model": "GD-D780",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 252,
+      "model": "GD-D1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 252,
+      "model": "GD-D1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 253,
+      "model": "BC-540",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 253,
+      "model": "BC-660",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 254,
+      "model": "BC-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 254,
+      "model": "BCH-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 255,
+      "model": "3900-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 255,
+      "model": "3900-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 256,
+      "model": "8080-790",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 257,
+      "model": "8080-470",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 257,
+      "model": "8080-620",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 258,
+      "model": "8080-790",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 259,
+      "model": "8033-800",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 260,
+      "model": "8033-470",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 260,
+      "model": "8033-620",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 261,
+      "model": "8033-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 261,
+      "model": "8033-H700",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 262,
+      "model": "5870-760",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 263,
+      "model": "5797-C480",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 263,
+      "model": "5797-BD480",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 264,
+      "model": "5797-C600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 264,
+      "model": "5797-BD600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 265,
+      "model": "5797-C840",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 265,
+      "model": "5797-BD840",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 266,
+      "model": "5797-D480",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 266,
+      "model": "5797-D600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 267,
+      "model": "5800-480",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 267,
+      "model": "5800-610",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 268,
+      "model": "5800-710",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 268,
+      "model": "5800-840",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 269,
+      "model": "5800-1020",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 269,
+      "model": "5800-1220",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 270,
+      "model": "5800-1300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 271,
+      "model": "5850-480",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 272,
+      "model": "5850-320",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 272,
+      "model": "5850-480",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 273,
+      "model": "5850-610",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 273,
+      "model": "5850-840",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 274,
+      "model": "5870-280",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 274,
+      "model": "5870-410",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 275,
+      "model": "5870-520A",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 275,
+      "model": "5870-520B",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 276,
+      "model": "5870-620A",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 276,
+      "model": "5870-620B",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 277,
+      "model": "5870-760",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 277,
+      "model": "5870-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 278,
+      "model": "5880-D640",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 279,
+      "model": "5880-C470",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 279,
+      "model": "5880-D470",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 280,
+      "model": "5880-C640",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 280,
+      "model": "5880-D640",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 281,
+      "model": "5880-C850",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 281,
+      "model": "5880-D850",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 282,
+      "model": "5900D-530X720",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 283,
+      "model": "5900D-350X400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 283,
+      "model": "5900D-350X660",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 284,
+      "model": "5900C-430",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 284,
+      "model": "5900D-430X650",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 285,
+      "model": "5900C-530",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 285,
+      "model": "5900D-530X720",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 286,
+      "model": "5900C-610",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 286,
+      "model": "5900D-610X750",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 287,
+      "model": "5900D-610X1600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 288,
+      "model": "5920-1600",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 289,
+      "model": "5920-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 289,
+      "model": "5920-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 290,
+      "model": "MA-800",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 291,
+      "model": "MA-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 291,
+      "model": "MA-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 292,
+      "model": "MA-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 292,
+      "model": "MA-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 293,
+      "model": "ME-1200",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 294,
+      "model": "ME-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 295,
+      "model": "MF-1000",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 296,
+      "model": "MF-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 296,
+      "model": "MF-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 297,
+      "model": "MG-820",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 298,
+      "model": "MG-820",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 298,
+      "model": "MG-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 299,
+      "model": "MH-6008001000",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 300,
+      "model": "MH-600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 300,
+      "model": "MH-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 301,
+      "model": "MH-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 302,
+      "model": "MI-1200",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 303,
+      "model": "MI-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 303,
+      "model": "MI-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 304,
+      "model": "MI-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 304,
+      "model": "MI-1500",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 305,
+      "model": "MJ-800",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 306,
+      "model": "MJ-300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 306,
+      "model": "MJ-400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 307,
+      "model": "MJ-500",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 307,
+      "model": "MJ-600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 308,
+      "model": "MJ-600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 308,
+      "model": "MJ-600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 309,
+      "model": "MJ-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 309,
+      "model": "MJ-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 310,
+      "model": "MJ-500L",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 311,
+      "model": "MO-1200",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 312,
+      "model": "MO-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 312,
+      "model": "MO-1600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 313,
+      "model": "MP-1600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 313,
+      "model": "MP-1600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 314,
+      "model": "MY-600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 315,
+      "model": "5950-440",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 315,
+      "model": "5950-650",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 316,
+      "model": "5950-850",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 317,
+      "model": "6680-530",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 318,
+      "model": "6680-400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 318,
+      "model": "6680-530",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 319,
+      "model": "6680-620",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 319,
+      "model": "6680-850",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 320,
+      "model": "6683-1000X400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 320,
+      "model": "6683-1500X500",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 321,
+      "model": "6685D-400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 321,
+      "model": "6685D-530",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 322,
+      "model": "6685D-650",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 322,
+      "model": "6685D-850",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 323,
+      "model": "6685C-400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 323,
+      "model": "6685C-530",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 324,
+      "model": "6685C-650",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 324,
+      "model": "6685C-850",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 325,
+      "model": "6686D-900X90",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 326,
+      "model": "6686-750X140",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 326,
+      "model": "6686D-900X90",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 327,
+      "model": "6686D-1190X90",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 327,
+      "model": "6686D-1490X90",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 328,
+      "model": "6686C-380X380",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 328,
+      "model": "6686C-510X510",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 329,
+      "model": "6689BD-570",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 329,
+      "model": "6689BD-750",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 330,
+      "model": "6689D-570",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 330,
+      "model": "6689D-750",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 331,
+      "model": "6689D-750",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 331,
+      "model": "6689D-750",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 332,
+      "model": "8366-1200",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 333,
+      "model": "8366-400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 333,
+      "model": "8366-510",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 334,
+      "model": "8366-610",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 334,
+      "model": "8366-810",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 335,
+      "model": "8366-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 335,
+      "model": "8366-1200-3",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 336,
+      "model": "8366-930X300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 336,
+      "model": "8366-1200X400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 337,
+      "model": "8366-910X300OVAL",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 337,
+      "model": "8366-1200X360OVAL",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 338,
+      "model": "20600-1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 338,
+      "model": "20600-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 339,
+      "model": "20600-1600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 340,
+      "model": "20610-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 340,
+      "model": "20610-1200",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 341,
+      "model": "20610-C550550",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 341,
+      "model": "20610-C800800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 342,
+      "model": "20620-860",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 343,
+      "model": "20620-1300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 343,
+      "model": "20620-1500",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 344,
+      "model": "20630-370-1A",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 344,
+      "model": "20630-370-1B",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 345,
+      "model": "20630-490-3",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 345,
+      "model": "20630-690-2",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 346,
+      "model": "20630-990-3",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 346,
+      "model": "20630-940-4",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 347,
+      "model": "20630-1100-4",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 348,
+      "model": "STS1-760",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 348,
+      "model": "STS1-1300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 349,
+      "model": "FF-1030",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 350,
+      "model": "20083-600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 350,
+      "model": "20083-800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 351,
+      "model": "20200-C800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 351,
+      "model": "20200-C1000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 352,
+      "model": "20200-C600X600",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 352,
+      "model": "20200-C1300X800",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 353,
+      "model": "2024-420",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 353,
+      "model": "2024-BD420",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 354,
+      "model": "2024-580",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 354,
+      "model": "2024-780",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 355,
+      "model": "20110-5152400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 355,
+      "model": "20110-5154000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 356,
+      "model": "20120-5152400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 356,
+      "model": "20120-5154000",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 357,
+      "model": "20660-500",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 358,
+      "model": "20955-820",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 360,
+      "model": "G21040-T111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 361,
+      "model": "G21040-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 362,
+      "model": "BKY-T111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 363,
+      "model": "BKY-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 364,
+      "model": "BZ-T111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 365,
+      "model": "BZ-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 365,
+      "model": "BZ-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 366,
+      "model": "BZ-T221",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 367,
+      "model": "BZ-T221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 368,
+      "model": "BZ-T222",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 369,
+      "model": "BZ-T222",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 369,
+      "model": "BZ-T222",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 370,
+      "model": "BZ-T224",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 371,
+      "model": "BR-T113",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 371,
+      "model": "BR-T116",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 372,
+      "model": "LUC-T111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 373,
+      "model": "LUC-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 373,
+      "model": "LUC-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 374,
+      "model": "LUC-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 374,
+      "model": "LUC-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 375,
+      "model": "LUC-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 375,
+      "model": "LUG-T111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 376,
+      "model": "APL-T350",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 377,
+      "model": "APL-T350",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 378,
+      "model": "LUC-T221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 378,
+      "model": "LUC-T221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 379,
+      "model": "LUG-T221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 380,
+      "model": "LUC-T115",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 380,
+      "model": "LUG-T115",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 381,
+      "model": "LR-T123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 381,
+      "model": "LR-T123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 382,
+      "model": "LR-T123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 382,
+      "model": "LR-T123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 383,
+      "model": "LR-T125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 383,
+      "model": "LR-T125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 384,
+      "model": "LR-T125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 384,
+      "model": "LR-T125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 385,
+      "model": "22002-T121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 385,
+      "model": "22002-T121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 386,
+      "model": "22002-T121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 386,
+      "model": "22002-T121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 387,
+      "model": "DM-T350-DO",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 388,
+      "model": "DM-T350-TM",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 388,
+      "model": "DM-T350-DO",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 389,
+      "model": "MT1013-3",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 389,
+      "model": "MT1014-2",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 390,
+      "model": "MT1015",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 390,
+      "model": "MT1016",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 391,
+      "model": "MT1017",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 391,
+      "model": "MT1023",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 392,
+      "model": "MT1018",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 392,
+      "model": "MT1019",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 393,
+      "model": "MT1020",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 393,
+      "model": "MT1021",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 394,
+      "model": "MT1022",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 394,
+      "model": "MT1027",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 395,
+      "model": "MT1024",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 395,
+      "model": "MT1025",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 396,
+      "model": "MT1028",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 396,
+      "model": "MT1029",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 397,
+      "model": "MT1031-2",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 397,
+      "model": "MT1046",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 398,
+      "model": "MT1012",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 398,
+      "model": "MT1033",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 399,
+      "model": "MT1034",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 399,
+      "model": "MT1034",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 400,
+      "model": "MT1034X",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 400,
+      "model": "MT1034X",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 401,
+      "model": "MT1035",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 401,
+      "model": "MT1041",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 402,
+      "model": "MT1036",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 402,
+      "model": "MT1036L",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 403,
+      "model": "MT1037",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 403,
+      "model": "MT1038",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 404,
+      "model": "MT1039",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 404,
+      "model": "MT1044",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 405,
+      "model": "MT1042",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 405,
+      "model": "MT1042-2",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 406,
+      "model": "MT1040",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 406,
+      "model": "MT1040",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 407,
+      "model": "MT1006",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 407,
+      "model": "MT1006X",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 408,
+      "model": "MT1011",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 410,
+      "model": "BKY-F111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 411,
+      "model": "BKY-F111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 412,
+      "model": "BKY-F1112",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 412,
+      "model": "BKY-F1112",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 413,
+      "model": "BZ-F111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 414,
+      "model": "BZ-F111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 414,
+      "model": "BZ-F111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 415,
+      "model": "BZ-F1212",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 416,
+      "model": "BZ-F1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 417,
+      "model": "BZY-F1212",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 418,
+      "model": "BZY-F1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 418,
+      "model": "BZY-F1212",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 419,
+      "model": "BR-F1124",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 420,
+      "model": "BR-F1124",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 420,
+      "model": "BR-F1124",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 421,
+      "model": "LUC-F221",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 422,
+      "model": "LUC-F221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 422,
+      "model": "LUC-F221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 423,
+      "model": "LUC-F1118",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 424,
+      "model": "LUC-F1118",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 425,
+      "model": "LR-F1212+6",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 426,
+      "model": "LR-F1212+6",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 428,
+      "model": "BKY-W320",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 429,
+      "model": "BKY-W320",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 429,
+      "model": "BKY-W400",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 430,
+      "model": "BKY-W121",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 431,
+      "model": "BKY-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 432,
+      "model": "BKY-W111",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 433,
+      "model": "BKY-W111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 433,
+      "model": "BKY-W221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 434,
+      "model": "BZ-W221",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 435,
+      "model": "BZ-W221",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 436,
+      "model": "BZ-W121",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 437,
+      "model": "BZ-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 437,
+      "model": "BZ-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 438,
+      "model": "BZ-W122",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 439,
+      "model": "BZ-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 439,
+      "model": "BZ-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 440,
+      "model": "BZ-W123",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 441,
+      "model": "BZ-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 441,
+      "model": "BZ-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 442,
+      "model": "BZ-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 442,
+      "model": "BZ-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 443,
+      "model": "BZ-W127",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 444,
+      "model": "BZR-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 444,
+      "model": "BZR-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 445,
+      "model": "BZR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 445,
+      "model": "BZR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 446,
+      "model": "BZR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 446,
+      "model": "BZR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 447,
+      "model": "BZR-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 447,
+      "model": "BZR-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 448,
+      "model": "BZR-W127",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 449,
+      "model": "BZBK-W122",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 450,
+      "model": "BZBK-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 451,
+      "model": "BZY-W123",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 452,
+      "model": "BZY-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 452,
+      "model": "BZY-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 453,
+      "model": "BZY-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 453,
+      "model": "BZY-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 454,
+      "model": "BZY-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 454,
+      "model": "BZY-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 455,
+      "model": "BZY-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 455,
+      "model": "BZY-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 456,
+      "model": "BZY-W127",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 457,
+      "model": "BZC-W122",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 458,
+      "model": "BZC-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 458,
+      "model": "BZC-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 459,
+      "model": "BZC-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 459,
+      "model": "BZC-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 460,
+      "model": "BR-W125",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 461,
+      "model": "BR-W111",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 461,
+      "model": "BR-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 462,
+      "model": "BR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 462,
+      "model": "BR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 463,
+      "model": "BR-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 464,
+      "model": "LUC-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 464,
+      "model": "LUC-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 465,
+      "model": "LUC-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 466,
+      "model": "LUC-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 466,
+      "model": "LUC-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 467,
+      "model": "LUC-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 467,
+      "model": "LUC-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 468,
+      "model": "LUC-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 468,
+      "model": "LUC-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 469,
+      "model": "LUL-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 470,
+      "model": "LUG-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 470,
+      "model": "LUG-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 471,
+      "model": "LUG-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 472,
+      "model": "LR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 472,
+      "model": "LR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 473,
+      "model": "LR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 473,
+      "model": "LR-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 474,
+      "model": "LR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 474,
+      "model": "LR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 475,
+      "model": "LR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 475,
+      "model": "LR-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 476,
+      "model": "SK-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 476,
+      "model": "SK-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 477,
+      "model": "SK-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 477,
+      "model": "SK-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 478,
+      "model": "SN-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 478,
+      "model": "SN-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 479,
+      "model": "SN-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 480,
+      "model": "BT-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 480,
+      "model": "BT-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 481,
+      "model": "BD-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 482,
+      "model": "CH-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 482,
+      "model": "CH-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 483,
+      "model": "CK-W300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 484,
+      "model": "FA-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 484,
+      "model": "FA-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 485,
+      "model": "FA-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 485,
+      "model": "FA-W125",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 486,
+      "model": "6611-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 486,
+      "model": "6611-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 487,
+      "model": "JA-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 487,
+      "model": "JA-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 488,
+      "model": "JA-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 489,
+      "model": "JC-W121",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 489,
+      "model": "JC-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 490,
+      "model": "BL-W244",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 490,
+      "model": "BL-W334",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 491,
+      "model": "LQ-W252",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 492,
+      "model": "GD-W420",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 493,
+      "model": "5797-W270",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 493,
+      "model": "5870-W280",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 494,
+      "model": "5900W-260X350",
+      "kind": "lifestyle",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 495,
+      "model": "5900W-260X360",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 495,
+      "model": "5900W-260X530",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 496,
+      "model": "5900W-350X750",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 497,
+      "model": "6686-W122",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 497,
+      "model": "6686-W123",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 498,
+      "model": "6686-W124",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 498,
+      "model": "6686-W126",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 499,
+      "model": "6689-W440",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 500,
+      "model": "8366-W180",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 500,
+      "model": "8366-W180X560",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 501,
+      "model": "20610-W220",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 501,
+      "model": "20610-W300",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    },
+    {
+      "page": 502,
+      "model": "20630-W370",
+      "kind": "spec",
+      "reason": "name is printed across the fitting; removing the letters would invent glass detail"
+    }
+  ],
+  "lifestyleUnmatched": [
+    {
+      "page": 21,
+      "code": "BZ-L126"
+    },
+    {
+      "page": 33,
+      "code": "BZ-L1296"
+    },
+    {
+      "page": 48,
+      "code": "BZBK-L1224"
+    },
+    {
+      "page": 90,
+      "code": "LUL-L1296"
+    },
+    {
+      "page": 288,
+      "code": "5920-1600"
+    },
+    {
+      "page": 299,
+      "code": "MH-6008001000"
+    },
+    {
+      "page": 494,
+      "code": "5900W-260X350"
+    }
+  ],
+  "unparsed": []
+}

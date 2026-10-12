@@ -5,9 +5,8 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { predictiveSearchAction } from '@/lib/search-actions';
-import { formatPrice } from '@/lib/format';
 import { Skeleton } from '@/components/ui/skeleton';
-import type { ProductCardData } from '@/lib/types';
+import type { Product } from '@/lib/types';
 
 export function SearchTrigger() {
   const handleClick = () => {
@@ -28,7 +27,7 @@ export function SearchTrigger() {
 export function SearchDialog() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<ProductCardData[]>([]);
+  const [results, setResults] = useState<Product[]>([]);
   const [pending, startTransition] = useTransition();
   const inputRef = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -167,17 +166,16 @@ export function SearchDialog() {
                   </p>
                   {results.map((product) => (
                     <Link
-                      key={product.id}
-                      href={`/products/${product.handle}`}
+                      key={product.slug}
+                      href={`/products/${product.slug}`}
                       onClick={handleResultClick}
                     >
                       <div className="flex gap-3 p-3 hover:bg-well transition-colors cursor-pointer">
-                        {/* Image */}
-                        <div className="well w-12 h-12 flex-shrink-0 overflow-hidden p-1">
-                          {product.featuredImage ? (
+                        <div className="well w-12 h-12 flex-shrink-0 overflow-hidden border border-line p-1">
+                          {product.images[0] ? (
                             <Image
-                              src={product.featuredImage.url}
-                              alt={product.title}
+                              src={product.images[0].src}
+                              alt={product.images[0].alt || product.title}
                               width={48}
                               height={48}
                               className="w-full h-full object-contain"
@@ -191,13 +189,12 @@ export function SearchDialog() {
                           )}
                         </div>
 
-                        {/* Content */}
                         <div className="flex-1 min-w-0">
                           <div className="line-clamp-1 text-product text-ink">
                             {product.title}
                           </div>
-                          <div className="text-body-sm text-ink-mid mt-1">
-                            {formatPrice(product.priceRange.minVariantPrice.amount)}
+                          <div className="text-label-sm text-ink-mid mt-1">
+                            {product.model}
                           </div>
                         </div>
                       </div>

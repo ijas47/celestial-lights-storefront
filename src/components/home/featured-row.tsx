@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import type { ProductCardData } from '@/lib/types';
+import type { Product } from '@/lib/types';
 import { ProductCard } from '@/components/product/product-card';
 
 interface FeaturedRowProps {
   title: string;
   categorySlug: string;
-  products: ProductCardData[];
+  products: Product[];
   preloadFirst?: boolean;
 }
 
@@ -29,7 +29,7 @@ export function FeaturedRow({
       <div className="grid-products">
         {products.slice(0, 8).map((product, idx) => (
           <ProductCard
-            key={product.id}
+            key={product.slug}
             product={product}
             preloadImage={preloadFirst && idx < 4}
           />

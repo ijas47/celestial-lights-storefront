@@ -1,18 +1,10 @@
 'use server';
 
-import { predictiveSearch } from '@/lib/shopify';
-import type { ProductCardData } from '@/lib/types';
+import { searchCatalogue } from '@/lib/catalogue';
+import type { Product } from '@/lib/types';
 
-export async function predictiveSearchAction(q: string): Promise<ProductCardData[]> {
+export async function predictiveSearchAction(q: string): Promise<Product[]> {
   const trimmed = q.trim();
-
-  if (trimmed.length < 2) {
-    return [];
-  }
-
-  try {
-    return await predictiveSearch(trimmed);
-  } catch {
-    return [];
-  }
+  if (trimmed.length < 2) return [];
+  return searchCatalogue(trimmed).slice(0, 8);
 }

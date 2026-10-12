@@ -9,8 +9,7 @@ export default function CategoryLoading() {
           <Skeleton className="h-10 w-64" />
           <Skeleton className="mt-4 h-4 w-full max-w-[52ch]" />
           <Skeleton className="mt-2 h-4 w-3/4 max-w-[52ch]" />
-          <div className="mt-6 flex items-center justify-between gap-4">
-            <Skeleton className="h-3 w-32" />
+          <div className="mt-6 flex justify-end">
             <Skeleton className="h-8 w-48" />
           </div>
         </div>

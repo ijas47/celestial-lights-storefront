@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Archivo } from 'next/font/google';
 import './globals.css';
-import { CartProvider } from '@/components/cart/cart-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { CartDrawer } from '@/components/cart/cart-drawer';
 import { SearchDialog } from '@/components/search/search-dialog';
 import { baseUrl, jsonLdScriptProps, organizationJsonLd } from '@/lib/seo';
 
@@ -21,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s | Celestial Lights',
   },
   description:
-    'Premium chandeliers, wall lights, pendants and outdoor lighting. Designer fixtures with warm, atmospheric light, shipped across India.',
+    'Crystal chandeliers, pendants, lamps and wall lights. Seen in the Kannur and Calicut showrooms. Price and lead time on WhatsApp.',
   openGraph: {
     siteName: 'Celestial Lights',
     type: 'website',
@@ -36,21 +34,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const orgJsonLd = organizationJsonLd();
 
   return (
-    <html
-      lang="en"
-      className={`${archivo.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${archivo.variable} h-full antialiased`}>
       <head>
         <script {...jsonLdScriptProps(orgJsonLd)} />
       </head>
       <body className="min-h-full flex flex-col bg-paper text-ink">
-        <CartProvider>
-          <Header />
-          <main className="min-h-screen flex-1">{children}</main>
-          <Footer />
-          <CartDrawer />
-          <SearchDialog />
-        </CartProvider>
+        <Header />
+        <main className="min-h-screen flex-1">{children}</main>
+        <Footer />
+        <SearchDialog />
       </body>
     </html>
   );
