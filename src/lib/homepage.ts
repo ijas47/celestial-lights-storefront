@@ -12,12 +12,12 @@ export const HOMEPAGE_BLOCKS = [
     slug: 'hanging-pendant',
     name: 'Pendants',
     blurb:
-      'Crystal pendants in chrome, with gold and silver finishes where the page lists them. Price and lead time are confirmed on WhatsApp.',
+      'Pendants and hanging lights in the current range. Purchase by contact or WhatsApp.',
   },
   {
     slug: 'wall-lights',
     name: 'Wall Lights',
     blurb:
-      'Wall sconces in chrome and clear crystal, with other finishes where the page lists them. Price and finish are confirmed on WhatsApp.',
+      'Wall lights in the current range. Purchase by contact or WhatsApp.',
   },
 ] as const;

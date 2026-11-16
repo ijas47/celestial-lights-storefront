@@ -38,6 +38,12 @@ export function Header() {
 
           <div className="ml-auto flex items-center gap-4 sm:gap-5">
             <SearchTrigger />
+            <Link
+              href="/contact"
+              className="text-label whitespace-nowrap text-ink transition-opacity hover:opacity-55"
+            >
+              Contact
+            </Link>
             <a
               href={enquiryUrl()}
               target="_blank"

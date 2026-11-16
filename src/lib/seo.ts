@@ -14,10 +14,21 @@ export function organizationJsonLd() {
   };
 }
 
+function mrpAmount(product: Product): number | null {
+  const raw = product.specs.find((spec) => spec.label === 'MRP')?.value ?? '';
+  const digits = raw.replace(/[^\d]/g, '');
+  if (!digits) return null;
+  const amount = Number(digits);
+  if (!Number.isFinite(amount) || amount < 200 || amount > 500000) return null;
+  return amount;
+}
+
 export function productJsonLd(product: Product) {
   const images = product.images.map(
     (image) => new URL(image.src, baseUrl).href
   );
+  const url = new URL(`/products/${product.slug}`, baseUrl).href;
+  const amount = mrpAmount(product);
 
   return {
     '@context': 'https://schema.org',
@@ -25,8 +36,18 @@ export function productJsonLd(product: Product) {
     name: product.title,
     sku: product.model,
     description: product.description || product.summary,
-    url: new URL(`/products/${product.slug}`, baseUrl).href,
+    url,
     ...(images.length > 0 ? { image: images } : {}),
+    ...(amount
+      ? {
+          offers: {
+            '@type': 'Offer',
+            priceCurrency: 'INR',
+            price: amount,
+            url,
+          },
+        }
+      : {}),
   };
 }
 

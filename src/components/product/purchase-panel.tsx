@@ -1,5 +1,5 @@
 import type { Product } from '@/lib/types';
-import { enquiryUrl } from '@/lib/enquiry';
+import { contactUrl, enquiryUrl } from '@/lib/enquiry';
 import { buttonClasses } from '@/components/ui/button';
 import { SpecList } from './variant-picker';
 
@@ -15,15 +15,22 @@ export function PurchasePanel({ product }: PurchasePanelProps) {
         <p className="mt-3 text-label-sm text-ink-mid">{product.model}</p>
       </div>
       <SpecList specs={product.specs} />
-      <p className="text-body text-ink">Price on request</p>
-      <a
-        href={enquiryUrl(product)}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${buttonClasses('solid', 'md')} w-full`}
-      >
-        Enquire on WhatsApp
-      </a>
+      <p className="text-body text-ink">
+        {product.specs.find((spec) => spec.label === 'MRP')?.value ?? 'Price on request'}
+      </p>
+      <div className="flex flex-col gap-3">
+        <a href={contactUrl(product)} className={`${buttonClasses('solid', 'md')} w-full`}>
+          Contact to purchase
+        </a>
+        <a
+          href={enquiryUrl(product)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${buttonClasses('outline', 'md')} w-full`}
+        >
+          WhatsApp
+        </a>
+      </div>
     </div>
   );
 }

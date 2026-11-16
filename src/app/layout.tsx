@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s | Celestial Lights',
   },
   description:
-    'Crystal chandeliers, pendants, lamps and wall lights. Seen in the Kannur and Calicut showrooms. Price and lead time on WhatsApp.',
+    'Chandeliers, pendants, lamps and wall lights. Seen in the Kannur and Calicut showrooms. Purchase by contact or WhatsApp.',
   openGraph: {
     siteName: 'Celestial Lights',
     type: 'website',

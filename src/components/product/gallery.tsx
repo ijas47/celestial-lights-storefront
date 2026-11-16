@@ -58,7 +58,8 @@ export function Gallery({ images, title }: GalleryProps) {
           fill
           sizes="(max-width:1024px) 100vw, 50vw"
           preload={activeIndex === 0}
-          className="object-contain animate-fade-in"
+          className="object-contain object-center animate-fade-in"
+          style={{ objectFit: 'contain', objectPosition: 'center' }}
         />
       </div>
 
@@ -81,7 +82,8 @@ export function Gallery({ images, title }: GalleryProps) {
                 alt={image.alt || `${title} thumbnail ${index + 1}`}
                 fill
                 sizes="64px"
-                className="object-contain"
+                className="object-contain object-center"
+                style={{ objectFit: 'contain', objectPosition: 'center' }}
               />
             </button>
           ))}
