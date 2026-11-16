@@ -110,6 +110,13 @@ export function MobileNav() {
                   {cat.shortName || cat.name}
                 </Link>
               ))}
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className="text-label text-ink hover:opacity-55 transition-opacity py-4 block border-b border-line"
+              >
+                Contact
+              </Link>
               <a
                 href={enquiryUrl()}
                 target="_blank"

@@ -22,8 +22,8 @@ export function Hero({ image, href }: HeroProps) {
         </h1>
 
         <p className="mt-5 max-w-[42ch] text-body-lg text-ink-mid">
-          Crystal chandeliers, pendants, lamps and wall lights. Price and
-          finish are confirmed on WhatsApp.
+          Chandeliers, pendants, lamps and wall lights. Purchase by contact
+          or WhatsApp.
         </p>
 
         <div>

@@ -264,10 +264,9 @@ body {
   background: var(--color-well);
   overflow: hidden;
 }
-/* Product sources are square and the wells are square, so object-contain
-   fills edge-to-edge with zero cropping, and gracefully letterboxes any
-   non-square outlier. No padding, no blend: the catalog is dominated by
-   dark lifestyle renders, which a multiply blend only muddies. */
+/* Wells are square. Product photos are not. object-contain and
+   object-center letterbox the whole fitting on the well colour.
+   No padding, no blend, never object-cover on a product photo. */
 .well img {
   transition: transform var(--duration-hover) var(--ease-out);
 }

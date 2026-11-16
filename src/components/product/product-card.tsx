@@ -20,7 +20,8 @@ export function ProductCard({ product, preloadImage }: ProductCardProps) {
             fill
             sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
             preload={preloadImage}
-            className="object-contain"
+            className="object-contain object-center"
+            style={{ objectFit: 'contain', objectPosition: 'center' }}
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">

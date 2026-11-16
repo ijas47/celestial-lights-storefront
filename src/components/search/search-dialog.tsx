@@ -178,7 +178,7 @@ export function SearchDialog() {
                               alt={product.images[0].alt || product.title}
                               width={48}
                               height={48}
-                              className="w-full h-full object-contain"
+                              className="w-full h-full object-contain object-center"
                             />
                           ) : (
                             <div className="flex h-full w-full items-center justify-center">

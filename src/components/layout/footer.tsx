@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/categories';
-import { CALL_DISPLAY, EMAIL } from '@/lib/enquiry';
+import { CALL_DISPLAY, EMAIL, enquiryUrl } from '@/lib/enquiry';
 
 const SHOWROOM_LINE =
-  'Seen in our Kannur and Calicut showrooms. Price and lead time on WhatsApp.';
+  'Seen in our Kannur and Calicut showrooms. Purchase by contact or WhatsApp.';
 
 export function Footer() {
   return (
@@ -17,10 +17,21 @@ export function Footer() {
             <p className="mt-4 max-w-[34ch] text-body text-ink-mid">
               {SHOWROOM_LINE}
             </p>
-            <a href={`mailto:${EMAIL}`} className="rule-link mt-6 text-ink">
+            <Link href="/contact" className="rule-link mt-6 text-ink">
+              Contact to purchase
+            </Link>
+            <a href={`mailto:${EMAIL}`} className="mt-4 block text-body-sm text-ink-mid">
               {EMAIL}
             </a>
             <p className="mt-3 text-label-sm text-ink-low">Call {CALL_DISPLAY}</p>
+            <a
+              href={enquiryUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block text-label-sm text-ink"
+            >
+              WhatsApp
+            </a>
           </div>
 
           <div className="lg:col-span-8">

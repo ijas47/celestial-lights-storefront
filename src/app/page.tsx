@@ -1,5 +1,6 @@
 import { getByCategory } from '@/lib/catalogue';
 import { HOMEPAGE_BLOCKS } from '@/lib/homepage';
+import Link from 'next/link';
 import { enquiryUrl, EMAIL } from '@/lib/enquiry';
 import { Hero } from '@/components/home/hero';
 import { CollectionBlocks } from '@/components/home/collection-blocks';
@@ -8,17 +9,21 @@ import { FeaturedRow } from '@/components/home/featured-row';
 import type { CatalogueImage, Product } from '@/lib/types';
 
 function roomImage(products: Product[]): CatalogueImage | null {
-  const product = products.find((item) => item.images.length > 1);
-  return product?.images[1] ?? null;
+  const product = products.find((item) => item.images.length > 0);
+  return product?.images[0] ?? null;
 }
 
 export default function Home() {
   const chandeliers = getByCategory('chandeliers');
+  const pendants = getByCategory('hanging-pendant');
   const wallLights = getByCategory('wall-lights');
+  const heroProducts = chandeliers.length > 0 ? chandeliers : pendants;
+  const heroHref =
+    chandeliers.length > 0 ? '/collections/chandeliers' : '/collections/hanging-pendant';
 
   return (
     <>
-      <Hero image={roomImage(chandeliers)} href="/collections/chandeliers" />
+      <Hero image={roomImage(heroProducts)} href={heroHref} />
 
       <CollectionBlocks
         blocks={HOMEPAGE_BLOCKS.map((block) => ({
@@ -55,20 +60,27 @@ export default function Home() {
           <div>
             <h3 className="caps text-label text-ink-inverse">Price and finish</h3>
             <p className="mt-3 max-w-[32ch] text-body-sm text-ink-inverse-mid">
-              Price, available finishes and lead time are confirmed on WhatsApp.
+              Price, finish and lead time are confirmed by contact or on WhatsApp.
             </p>
           </div>
           <div>
             <h3 className="caps text-label text-ink-inverse">Showrooms</h3>
             <p className="mt-3 max-w-[36ch] text-body-sm text-ink-inverse-mid">
               Celestial Lights Kannur and Celestial Lights Calicut.{' '}
+              <Link
+                href="/contact"
+                className="text-ink-inverse underline underline-offset-4"
+              >
+                Contact
+              </Link>
+              {' · '}
               <a
                 href={enquiryUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink-inverse underline underline-offset-4"
               >
-                Get in touch
+                WhatsApp
               </a>
               {' · '}
               <a
